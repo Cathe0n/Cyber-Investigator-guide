@@ -7,8 +7,7 @@ This guide aims to assist investigators focused on cybercrime by providing guida
 [![License](https://img.shields.io/badge/License-Public_Safety_Institution_-purple)](#license)
 [![issues - Cyber-Investigator-guide](https://img.shields.io/github/issues/Cathe0n/Cyber-Investigator-guide)](https://github.com/Cathe0n/Cyber-Investigator-guide/issues)
 
-![2CIED](https://github.com/user-attachments/assets/fdb46b41-594a-4f8e-b736-184b7df58ce4)
-<img src="https://github.com/user-attachments/assets/fdb46b41-594a-4f8e-b736-184b7df58ce4" width="800" height="800">
+<img src="https://github.com/user-attachments/assets/fdb46b41-594a-4f8e-b736-184b7df58ce4" width="500" height="500">
 
 
 
