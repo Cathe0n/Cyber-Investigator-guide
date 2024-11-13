@@ -2,54 +2,41 @@
 This guide aims to assist investigators focused on cybercrime by providing guidance on incident handling, response, and thorough, methodical evidence processing. It is intended as a supplementary resource to support investigators and serve as a reminder, rather than as a standalone procedure.
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/fdb46b41-594a-4f8e-b736-184b7df58ce4" width="500" height="500">
+    <img src="https://github.com/user-attachments/assets/fdb46b41-594a-4f8e-b736-184b7df58ce4" width="300" height="300">
 </div>
 
 
-# Color LS
+# Incident handling/response
 
 [![GitHub tag](https://img.shields.io/github/tag/Cathe0n/Cyber-Investigator-guide?include_prereleases=&sort=semver&color=purple)](https://github.com/Cathe0n/Cyber-Investigator-guide/releases/)
 [![License](https://img.shields.io/badge/License-Public_Safety_Institution_-purple)](#license)
 [![issues - Cyber-Investigator-guide](https://img.shields.io/github/issues/Cathe0n/Cyber-Investigator-guide)](https://github.com/Cathe0n/Cyber-Investigator-guide/issues)
 
 
-
-
- ![image](https://user-images.githubusercontent.com/17109060/32149040-04f3125c-bd25-11e7-8003-66fd29bc18d4.png)
-
-*If you're interested in knowing the powerlevel9k configuration to get this prompt, have a look at [this gist](https://gist.github.com/athityakumar/1bd5e9e24cd2a1891565573a893993eb).*
-
 # Table of contents
 
 - [Usage](#usage)
-  - [Flags](#flags)
-    - `-1`
-    - `-a`   (or) `--all`
-    - `-A`   (or) `--almost-all`
-    - `-d`   (or) `--dirs`
-    - `-f`   (or) `--files`
-    - `--help`
-    - `-l`   (or) `--long`
-    - `--report`
-    - `--tree` (or) `--tree=[DEPTH]`
-    - `--gs` (or) `--git-status`
-    - `--sd` (or) `--sort-dirs` or `--group-directories-first`
-    - `--sf` (or) `--sort-files`
-    - `-t`
-  - [Combination of flags](#combination-of-flags)
-- [Installation](#installation)
-- [Recommended configurations](#recommended-configurations)
-- [Custom configurations](#custom-configurations)
-- [Updating](#updating)
-- [Uninstallation](#uninstallation)
-- [Contributing](#contributing)
-- [License](#license)
 
-# Usage
+
+# State of the crime scene.
 
 [(Back to top)](#table-of-contents)
 
-Man pages have been added. Checkout `man colorls`.
+When processing evidence as an investigator, preserving the crime scene is crucial. Each change made by a person or you must be documented in order to minimize the chance of evidence tampering. If a client calls you to the scene, please warn the client to preserve and remove any employees or personnel from the suspected crime scene.
+
+Once you or your team have arrived, you must question the client.
+
+- What do you think has happened?
+- What systems are affected?
+- How important is this system to production?
+
+This can give you an idea/foundation on how to proceed with investigating the incident. Take note of how important the system is to the client; you cannot delay them too much as they are actively losing money. If there’s a time crunch, the client should have a backup in place just for such an incident, but if that’s not the case, try to assist in setting up a backup system (technically not your job, though sooo). DO NOT affect the crime scene.
+
+You either process the crime scene live and as fast as possible using gKAPE or any other tools (will be provided in this guide soon!! ^o^), since it’s crucial to the client. This of course limits how many artefacts/crumbs can be gathered compared to the imaging process, also known as offline analysis.
+
+# Windows live analysis | Computer/Server (Phone is a different matter :3).
+
+There are tools in order to process live computer/server evidence. One of the tools used is gKAPE, but of course, you can manually search the registry and all that (Windows), but
 
 ### Flags
 
