@@ -32,7 +32,7 @@ This can give you an idea/foundation on how to proceed with investigating the in
 
 You either process the crime scene live and as fast as possible using gKAPE or any other tools (Will be provided in this guide soon!! ^o^), since it’s crucial to the client. This of course limits how many artefacts/crumbs can be gathered compared to the imaging process or also known as offline analysis. 
 
-#Website incident handling.
+### Website incident handling.
 
 There are tools in order to process live computer/server evidence. According to different Operating systems and what type of incident has occurred different tools will be used. Let’s discuss Websites related incidents, one of the common incidents encountered is defacement of the client’s website. 
 
