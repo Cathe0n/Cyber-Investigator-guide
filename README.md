@@ -20,23 +20,24 @@ This guide aims to assist investigators focused on cybercrime by providing guida
 
 # State of the crime scene.
 
-[(Back to top)](#table-of-contents)
+When processing evidence as an investigator, preserving the crime scene is crucial. Each changes made by a person or you must be documented in order to minimise the chance of evidence tampering. If a client called you to the scene please warn the client to preserve and remove any employees or personnels from the suspected crime scene.
 
-When processing evidence as an investigator, preserving the crime scene is crucial. Each change made by a person or you must be documented in order to minimize the chance of evidence tampering. If a client calls you to the scene, please warn the client to preserve and remove any employees or personnel from the suspected crime scene.
+Once you or your team have arrived you must question the client. 
 
-Once you or your team have arrived, you must question the client.
+- What do you think has happened ? 
+- What systems are affected ?
+- How important is this system to production ?
 
-- What do you think has happened?
-- What systems are affected?
-- How important is this system to production?
+This can give you an idea/foundation on how to proceed with investigating the incident. Take note of how important the system is to the client, you cannot delay them too much as they are actively losing money. If there’s a time crunch the client should have a backup in place just for such an incident but if that’s not the case try to assist in setting up a backup system (technically not your job though sooo). DO NOT affect the crime scene. 
 
-This can give you an idea/foundation on how to proceed with investigating the incident. Take note of how important the system is to the client; you cannot delay them too much as they are actively losing money. If there’s a time crunch, the client should have a backup in place just for such an incident, but if that’s not the case, try to assist in setting up a backup system (technically not your job, though sooo). DO NOT affect the crime scene.
-
-You either process the crime scene live and as fast as possible using gKAPE or any other tools (will be provided in this guide soon!! ^o^), since it’s crucial to the client. This of course limits how many artefacts/crumbs can be gathered compared to the imaging process, also known as offline analysis.
+You either process the crime scene live and as fast as possible using gKAPE or any other tools (Will be provided in this guide soon!! ^o^), since it’s crucial to the client. This of course limits how many artefacts/crumbs can be gathered compared to the imaging process or also known as offline analysis. 
 
 # Windows live analysis | Computer/Server (Phone is a different matter :3).
 
-There are tools in order to process live computer/server evidence. One of the tools used is gKAPE, but of course, you can manually search the registry and all that (Windows), but
+There are tools in order to process live computer/server evidence. According to different Operating systems and what type of incident has occurred different tools will be used. Let’s discuss Websites related incidents, one of the common incidents encountered is defacement of the client’s website. 
+
+If the clients have set up their webserver properly they must have an IDS or a monitoring system in place to deter anything malicious from happening and if that’s the case it’s just about finding the logs and reviewing them and implementing a fix so the incident doesn’t happen again. But it’s not that simple. 
+
 
 ### Flags
 
