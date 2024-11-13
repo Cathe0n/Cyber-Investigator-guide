@@ -4,7 +4,7 @@ This guide aims to assist investigators focused on cybercrime by providing guida
 <div align="center">
     <img src="https://github.com/user-attachments/assets/fdb46b41-594a-4f8e-b736-184b7df58ce4" width="300" height="300">
 </div>
-
+Cyber Investigator Experimental Detachment
 
 # Incident handling/response
 
