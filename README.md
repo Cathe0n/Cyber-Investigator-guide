@@ -7,7 +7,9 @@ This guide aims to assist investigators focused on cybercrime by providing guida
 [![License](https://img.shields.io/badge/License-Public_Safety_Institution_-purple)](#license)
 [![issues - Cyber-Investigator-guide](https://img.shields.io/github/issues/Cathe0n/Cyber-Investigator-guide)](https://github.com/Cathe0n/Cyber-Investigator-guide/issues)
 
-A Ruby script that colorizes the `ls` output with color and icons. Here are the screenshots of working example on an iTerm2 terminal (Mac OS), `oh-my-zsh` with `powerlevel9k` theme and `powerline nerd-font + awesome-config` font with the `Solarized Dark` color theme.
+![2CIED](https://github.com/user-attachments/assets/fdb46b41-594a-4f8e-b736-184b7df58ce4)
+
+
 
  ![image](https://user-images.githubusercontent.com/17109060/32149040-04f3125c-bd25-11e7-8003-66fd29bc18d4.png)
 
