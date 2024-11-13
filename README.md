@@ -20,7 +20,7 @@ This guide aims to assist investigators focused on cybercrime by providing guida
 
 # State of the crime scene.
 
-When processing evidence as an investigator, preserving the crime scene is crucial. Each changes made by a person or you must be documented in order to minimise the chance of evidence tampering. If a client called you to the scene please warn the client to preserve and remove any employees or personnels from the suspected crime scene.
+When processing evidence as an investigator, preserving the crime scene is crucial. Each changes made by a person or you must be documented in order to minimise the chance of evidence tampering. If a client called you to the scene please warn the client to preserve and remove any employees or personnels from the suspected crime scene. An Incident response plan will be necessary in order to properly process a report. (One will be provided soon ^-^ /)
 
 Once you or your team have arrived you must question the client. 
 
@@ -32,7 +32,7 @@ This can give you an idea/foundation on how to proceed with investigating the in
 
 You either process the crime scene live and as fast as possible using gKAPE or any other tools (Will be provided in this guide soon!! ^o^), since it’s crucial to the client. This of course limits how many artefacts/crumbs can be gathered compared to the imaging process or also known as offline analysis. 
 
-# Windows live analysis | Computer/Server (Phone is a different matter :3).
+#Website incident handling.
 
 There are tools in order to process live computer/server evidence. According to different Operating systems and what type of incident has occurred different tools will be used. Let’s discuss Websites related incidents, one of the common incidents encountered is defacement of the client’s website. 
 
