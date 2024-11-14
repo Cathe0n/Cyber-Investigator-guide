@@ -28,15 +28,51 @@ Once you or your team have arrived you must question the client.
 - What systems are affected ?
 - How important is this system to production ?
 
-This can give you an idea/foundation on how to proceed with investigating the incident. Take note of how important the system is to the client, you cannot delay them too much as they are actively losing money. If there’s a time crunch the client should have a backup in place just for such an incident but if that’s not the case try to assist in setting up a backup system (technically not your job though sooo). DO NOT affect the crime scene. 
+
+
+This can give you an idea/foundation on how to proceed with investigating the incident. Take note of how important the system is to the client, you cannot delay them too much as they are actively losing money. If there’s a time crunch the client should have a backup in place just for such an incident but if that’s not the case try to assist in setting up a backup system (technically not your job though sooo). DO NOT affect the crime scene without documentation. 
 
 You either process the crime scene live and as fast as possible using gKAPE or any other tools (Will be provided in this guide soon!! ^o^), since it’s crucial to the client. This of course limits how many artefacts/crumbs can be gathered compared to the imaging process or also known as offline analysis. 
 
-### Website incident handling.
 
-There are tools in order to process live computer/server evidence. According to different Operating systems and what type of incident has occurred different tools will be used. Let’s discuss Websites related incidents, one of the common incidents encountered is defacement of the client’s website. 
+#Website incident handling (Phishing).
 
-If the clients have set up their webserver properly they must have an IDS or a monitoring system in place to deter anything malicious from happening and if that’s the case it’s just about finding the logs and reviewing them and implementing a fix so the incident doesn’t happen again. But it’s not that simple. 
+Let’s discuss Websites related incidents, one of the common incidents encountered is defacement of the client’s website. If the clients have set up their webserver properly they must have an SIEM system/IDS in place to deter anything malicious from happening and if that’s the case it’s just about finding the logs and reviewing them and implementing a fix so the incident doesn’t happen again. But it’s not that simple. 
+
+Clients will want a thorough report and investigation done before moving into the eradication process. So this is where we go into the analysis part of the job. Assuming the client has an SIEM/IDS system implemented you must trace what machine or computer committed the malicious activity. Any remote attack MUST originate from an infected system so finding that machine is crucial if it’s a network of machines then ISOLATE them.
+
+Once isolated, perform the identification. If it’s a network of machines it’ll take more than you alone in order to make it quick. In a team, you must command one of your members to interview the employees. While you or another member starts working to isolate the machines from the network. (This is assuming it’s a medium-large company if it’s small then taking it off the grid is needed MAYBE idk what you’re working with ‘ ^ ’)
+
+-What have you done in the past 24hr ?
+- Did you notice anything weird when using your computer ? A random CMD popped out of nowhere ? (Say a black window for the elderly >->)
+- Downloaded anything recently ?
+- Clicked on anything ? 
+- Plugged a USB into this machine before ?
+
+With these questions hopefully you can pinpoint WHEN the infection started and WHERE it originated. 
+
+## Email Phishing campaign. 
+
+According to Cloudfare 90% of cyber attacks came from Email Phishing campaigns. So, you shouldn’t be surprised :3.  First analyse the suspect email using EmailDossier or any other tools EML analyzer is awesome too. .This is multiple way to check if the Email address smells fishy (see what I did there :3…No, I won’t stop), just read the results from EML analyzer. and if it doesn’t look official the you know this is where the infection came from…Unless there’s multiple phishing email…So uhh good luck!! ^-^. A phishing Email must have a payload and you can check to see whether it's an executable or a PDF file but these malicious actors are smart and sneaky so they’ll try their best to hide it >.<. Use these tools to help you analyse the payload.
+
+https://analyzer.sublime.security/
+https://centralops.net/co/EmailDossier.aspx https://lookup.mxtoolbox.com/dmarc/dmarc-email-tools
+### Email analysis.
+
+Alright!!, so you need to navigate through Gmail or whatever this company uses as their main Email provider and find a way to show it’s .eml file. In Gmail it is as shown in the picture. Once you click show original
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ### Flags
