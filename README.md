@@ -24,6 +24,9 @@ When processing evidence as an investigator, preserving the crime scene is cruci
 
 Once you or your team have arrived you must question the client. 
 
+![firefox_YNfIx5wjww](https://github.com/user-attachments/assets/95826c5d-d2f3-4c38-8106-38bc4d27b134)
+
+
 - What do you think has happened ? 
 - What systems are affected ?
 - How important is this system to production ?
