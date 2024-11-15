@@ -40,7 +40,7 @@ Before you get into messing everything up let's use [gKAPE](https://www.kroll.co
 Once you have everything extracted and documented, you then can get into dynamic analysis of the malware/exploit or whatever. 
 
 ### Static analysis.
-If you're dealing with a live system when you arrived then **Static analysis** should be a second. Static analysis takes a lot of time and depending on the situation, a thorough live analysis of the affected machine should suffice. Anyways, first you need to remove every storage drives in the system since you don't want to deal with RAID systems and all that so better pay attention >->. You can use your own machine to conduct the imaging process, you can use [TestDisk](https://www.cgsecurity.org/wiki/TestDisk_Download) or [DMDE](https://dmde.com/). Depending on your preference you can generate an image in .dd or any other formates you prefer. 
+If you're dealing with a live system when you arrived then **Static analysis** should be a second. Static analysis takes a lot of time and depending on the situation, a thorough live analysis of the affected machine should suffice. Anyways, first you need to remove every storage drives in the system since you don't want to deal with RAID systems and all that so better pay attention >->. You can use your own machine to conduct the imaging process, you can use [TestDisk](https://www.cgsecurity.org/wiki/TestDisk_Download) or [DMDE](https://dmde.com/). Depending on your preference you can generate an image in .dd or any other formats you prefer. 
 > [!IMPORTANT]
 > Depending on your hardware data imaging will take AGES!!! '-'
 
