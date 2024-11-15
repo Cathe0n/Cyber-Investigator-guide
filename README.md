@@ -1,5 +1,5 @@
 # Cyber Investigator guide
-This guide aims to assist investigators focused on cybercrime by providing guidance on incident handling, response, and thorough, methodical evidence processing. It is intended as a supplementary resource to support investigators and serve as a reminder, rather than as a standalone procedure.
+This guide aims to assist investigators focused on cybercrime by guiding incident handling, response, and thorough, methodical evidence processing. It is intended as a supplementary resource to support investigators and serves as a reminder rather than a standalone procedure.
 
 <div align="center">
     <img src="https://github.com/user-attachments/assets/fdb46b41-594a-4f8e-b736-184b7df58ce4" width="300" height="300">
@@ -20,7 +20,7 @@ Cyber Investigator Experimental Detachment
 
 # State of the crime scene.
 
-When processing evidence as an investigator, preserving the crime scene is crucial. Each changes made by a person or you must be documented in order to minimise the risk of evidence tampering. If a client contacts you to report an incident, advise them to secure the area, remove all personnel from the suspected crime scene, and ensure no one interacts with the environment. Establishing an incident response plan will be necessary to accurately record and process the situation.  (One will be provided soon ^-^ / )
+When processing evidence as an investigator, preserving the crime scene is crucial. Alternatively, changes made by an investigator must be documented to minimise the risk of evidence tampering. If a client contacts you to report an incident, advise them to secure the area, remove all personnel from the suspected crime scene, and ensure no one interacts with the environment. Establishing an incident response plan will be necessary to accurately record and process the situation.  (One will be provided soon ^-^ / )
 
 <div align="center">
     <img src="https://github.com/user-attachments/assets/95826c5d-d2f3-4c38-8106-38bc4d27b134" width="500" height="300">
