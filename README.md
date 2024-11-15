@@ -156,8 +156,13 @@ Secondly, identify the aftermath of the attack.
 Try to identify the goal of this malicious actor. This can give you some sort of an idea of how to continue the investigation.
 <br><br>
 
-### Malware Static analysis (Microsoft Windows <_<).
-This is going to be a bit difficult. If the system is known to have already been infected and YOU have isolated it from the network you can do a full system imaging and analyse the malware safely with the copied image. This is known as static analysis and it’s the safest way you can analyse a system. If that’s the case you can use tools such as [IDA](https://hex-rays.com/ida-pro), [PE-Explorer](https://www.pe-explorer.com/) and [OllyDbg](https://www.ollydbg.de/download.htm)...Yeah, this is reverse engineering area WHICH will not be fully covered in this guide. (btw this for Windows ^-^). For Linux systems you can use [REMnux](https://docs.remnux.org/) this has everything you need to analyse malware in Linux systems.
+### Malware Static analysis.
+
+**Windows systems**
+This is going to be a bit difficult. If the system is known to have already been infected and YOU have isolated it from the network you can do a full system imaging and analyse the malware safely with the copied image. This is known as static analysis and it’s the safest way you can analyse a system. If that’s the case you can use tools such as [IDA](https://hex-rays.com/ida-pro), [PE-Explorer](https://www.pe-explorer.com/) and [OllyDbg](https://www.ollydbg.de/download.htm)...Yeah, this is reverse engineering area WHICH will not be fully covered in this guide. (btw this for Windows ^-^). 
+
+**Linux systems.**
+For Linux systems you can use [REMnux](https://docs.remnux.org/) this has everything you need to analyse malware in Linux systems.
 
 <br><br>
 ### Malware Dynamic Analysis.
