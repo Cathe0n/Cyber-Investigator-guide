@@ -34,6 +34,18 @@ Upon arriving at the scene, begin by interviewing the client with a few key ques
 
 This can give you an idea/foundation on how to proceed with investigating the incident. Take note of how important the system is to the client, you cannot delay them too much as they are actively losing money. If there’s a time crunch the client should have a backup in place just for such an incident but if that’s not the case try to assist in setting up a backup system (technically not your job though sooo). DO NOT affect the crime scene without documentation. You either process the crime scene live and as fast as possible since it’s crucial to the client. This of course limits how many artefacts/crumbs can be gathered compared to the imaging process or also known as static analysis. 
 
+### Live analysis. 
+Before you get into messing everything up let's use [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) and [Autopsy](https://www.autopsy.com/) or any artifacts collecting appilcations to analyse what has happened recently. [FTK Imager](https://www.exterro.com/ftk-product-downloads/ftk-imager-4-7-3-81) Is also another great tool and can perfom a memory analysis on a live system. Depending on the situation, [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) can suffice but using both [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) and [FTK Imager](https://www.exterro.com/ftk-product-downloads/ftk-imager-4-7-3-81) is recommended. 
+
+Once you have everything extracted and documented, you then can get into dynamic analysis of the malware/exploit or whatever. 
+
+### Static analysis.
+If you're dealing with a live system when you arrived then **Static analysis** should be a second. Static analysis takes a lot of time and depending on the situation, a thorough live analysis of the affected machine should suffice. Anyways, first you need to remove every storage drives in the system since you don't want to deal with RAID systems and all that so better pay attention >->. You can use your own machine to conduct the imaging process, you can use [TestDisk](https://www.cgsecurity.org/wiki/TestDisk_Download) or [DMDE](https://dmde.com/). Depending on your preference you can generate an image in .dd or any other formates you prefer. 
+> [!IMPORTANT]
+> Depending on your hardware data imaging will take AGES!!! '-'
+
+To do a full imaging of a system can take a long time and if it’s a server you can take a vacation and come back and it’s not finished imaging. It is also expensive, for example if a computer has a 1 TB storage device you also need a 1 TB storage device to do a full **physical imaging**. But you can also do a **Logical imaging** but it is **NOT** thorough so determine and choose wisely on how you will conduct your investigation. 
+
 
 # Website incident handling (Phishing).
 
@@ -128,19 +140,6 @@ Now, this is technically a post incident. You need to analyse what that malware 
 # Malware analysis! (This is big brain time d(>_< ) ).
 
 I’m going to be honest,  this is where things are complicated and time consuming. Malware analysis is a WHOLE nother topic and I will make another guide for it soon bare with me!! >-<. 
-
-### Live analysis. 
-Before you get into messing everything up let's use [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) and [Autopsy](https://www.autopsy.com/) or any artifacts collecting appilcations to analyse what has happened recently. [FTK Imager](https://www.exterro.com/ftk-product-downloads/ftk-imager-4-7-3-81) Is also another great tool and can perfomr memory analysis on a live system. Depending on the situation, [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) can suffice but using both [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) and [FTK Imager](https://www.exterro.com/ftk-product-downloads/ftk-imager-4-7-3-81) is recommended. 
-
-Once you have everything extracted and documented, you then can get into dynamic analysis of the malware/exploit or whatever. 
-
-### Static analysis.
-If you're dealing with a live system when you arrived then **Static analysis** should be a second. Static analysis takes a lot of time and depending on the situation, a thorough live analysis of the affected machine should suffice. Anyways, first you need to remove every storage drives in the system since you don't want to deal with RAID systems and all that so better pay attention >->. You can use your own machine to conduct the imaging process, you can use [TestDisk](https://www.cgsecurity.org/wiki/TestDisk_Download) or [DMDE](https://dmde.com/). Depending on your preference you can generate an image in .dd or any other formates you prefer. 
-> [!IMPORTANT]
-> Depending on your hardware data imaging will takeeeee AGES '-'
-
-To do a full imaging of a system can take a long time and if it’s a server you can take a vacation and come back and it’s not finished imaging. It is also expensive, for example if a computer has a 1 TB storage device you also need a 1 TB storage device to do a full **physical imaging**. But you can also do a **Logical imaging** but it is **NOT** thorough so determine and choose wisely on how you will conduct your investigation. 
-
 
 First, identify **HOW** the malware breached the systems.
 
