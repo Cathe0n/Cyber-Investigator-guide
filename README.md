@@ -98,7 +98,7 @@ Once you’ve acquired the .eml file use the EML analyzer to well uh analyse it 
 
 <br><br>
 
-Here you can see what EML Analyzer has provided. [EML Analyzer](https://analyzer.sublime.security/) has VirusTotal API integrated into it so you can see if the attachments are malicious or not.
+Here you can see what EML Analyzer has provided. [EML Analyzer](https://analyzer.sublime.security/) has [VirusTotal](https://www.virustotal.com/) API integrated into it so you can see if the attachments are malicious or not.
 
 <br><br>
 <div align="center">
@@ -125,15 +125,35 @@ Here you can see what EML Analyzer has provided. [EML Analyzer](https://analyzer
 <br><br>
 Now, this is technically a post incident. You need to analyse what that malware does. There are multiple ways to do this of course… So let’s get into it!! ^o^
 
-### Malware analysis! (This is big brain time d(>_< ) ).
+# Malware analysis! (This is big brain time d(>_< ) ).
 
-I’m going to be honest,  this is where things are complicated and time consuming. Malware analysis is a WHOLE nother topic and I will make another guide for it soon bare with me!! >-<. 
+I’m going to be honest,  this is where things are complicated and time consuming. Malware analysis is a WHOLE nother topic and I will make another guide for it soon bare with me!! >-<. Before you get into messing everything up let's use [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) and [Autopsy](https://www.autopsy.com/) or any artifacts collecting appilcations to analyse what has happened recently. gKAPE collects
 
-First identify **HOW** the malware breached the systems.
+First, identify **HOW** the malware breached the systems.
 
 - Phishing Email ?
 - Bad USB/Physical infection ?
 - Pirated software ?
+
+Secondly, identify the aftermath of the attack.
+
+- What did the malware do to the system ?
+- Is it a backdoor ?
+- A ransom ?
+  
+Try to identify the goal of this malicious actor. This can give you some sort of an idea of how to continue the investigation.
+<br><br>
+
+### Static analysis (Microsoft Windows <_<).
+This is going to be a bit difficult. If the system is known to have already been infected and YOU have isolated it from the network you can do a full system imaging and analyse the malware safely with the copied image. This is known as offline analysis and it’s the safest way you can analyse a system. If that’s the case you can use tools such as [IDA](https://hex-rays.com/ida-pro), [PE-Explorer](https://www.pe-explorer.com/) and [OllyDbg](https://www.ollydbg.de/download.htm)...Yeah, this is reverse engineering area WHICH will not be fully covered in this guide. (btw this for Windows ^-^). For Linux systems you can use [REMnux](https://docs.remnux.org/) this has everything you need to analyse malware in Linux systems.
+
+<br><br>
+### Dynamic Analysis.
+Another way is to dynamically analyse the malware. Each malware always ahve a goal and that goal requires processing power from the computer. You can use [Procmon](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon) from Microsoft itself to find suspicious services and processes running (Learn how to use this properly '-'). Another application called Winpatrol **did** exist but it has been sent to heaven (RIP Scotty, you were the best puppy Y-Y). [Procmon](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon) depending on the scenarios can help you understand what's the malware's goals are and can provide enough information to compile into a report. But a static analysis and reverse engineering can help you further understand better.
+
+
+
+
 
 
 
