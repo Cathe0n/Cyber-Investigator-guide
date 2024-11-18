@@ -54,7 +54,7 @@ If you're dealing with a live system when you arrived then **Static analysis** s
 To do a full imaging of a system can take a long time and if it’s a server you can take a vacation and come back and it’s not finished imaging. It is also expensive, imaging a 1 TB drive requires another 1 TB drive to store the image and this is called **Physical imaging**. That said, you have options. Physical imaging captures everything but takes the longest. **Logical imaging** is faster but less thorough. Carefully consider the situation to decide the best approach for your investigation. There's also **RAW imaging** but this for cases where you need more details or for **Corrupted data recovery**.
 
 > [!IMPORTANT]
-> Use **WRITE BLOCKER** I don't care how experienced you are a **WRITE BLOCKER IS ESSENTIAL** '~'
+> Use **WRITE BLOCKER** I don't care how experienced you are, a **WRITE BLOCKER IS ESSENTIAL** '~'
 
 # Website incident handling (Phishing).
 
