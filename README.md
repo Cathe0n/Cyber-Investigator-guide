@@ -64,13 +64,13 @@ Let’s talk about website-related incidents. One common issue is the defacement
     <img src="https://github.com/user-attachments/assets/abc58982-595b-404b-8706-4aee1fb2b1bb" style="width: 70%; max-width: 300; max-height: 300;">
 </div>
 
-Clients will want a thorough report and investigation done before moving into the eradication process. This is where the analysis part of the job comes in. Assuming the client has an SIEM/IDS system in place, your first task is to trace which machine or computer carried out the malicious activity.Any remote attack **MUST** originate from an infected machine, so identifying that machine is crucial. If it’s a network of machines involved, you’ll need to **ISOLATE** them by separating them from the main network. (Talk with the company’s engineer…They don’t have one ? Welp it’s now your job :P).
+Clients will want a thorough investigation and report done before moving into the eradication process. This is where the analysis part of the job comes in. Assuming the client has an SIEM/IDS system in place, your first task is to trace which machine or computer carried out the malicious activity.Any remote attack **MUST** originate from an infected machine, so identifying that machine is crucial. If it’s a network of machines involved, you’ll need to **ISOLATE** them by separating them from the main network. (Talk with the company’s engineer…They don’t have one ? Welp it’s now your job :P).
 
 Once the machines are isolated, begin the identification process. If it's a network of infected machines, it’ll take more than just you to get it done quickly. You’ll need a team to move efficiently.
 
 Start by commanding one of your team members to interview the employees. They may have seen something unusual or noticed any signs of the attack before it escalated. Meanwhile, you or another member should work on isolating the machines from the network and securing any potential entry points.
 
-While the interviews are happening, keep an eye on the overall network.Once the network is contained, it’s time to dive into the forensics. Use your tools to analyze the compromised systems, check logs, and gather evidence that can point to how the attack occurred, what vulnerabilities were exploited, and what impact it had on the system.
+While the interviews are happening, keep an eye on the overall network. Once the network is contained, it’s time to dive into the forensics. Use your tools to analyze the compromised systems, check logs, and gather evidence that can point to how the attack occurred, what vulnerabilities were exploited, and what impact it had on the system.
 
 It’s also essential to document every action taken during this phase this will be crucial for building a report and providing evidence for any legal actions down the line.
 
