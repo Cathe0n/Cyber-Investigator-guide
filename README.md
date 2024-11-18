@@ -104,7 +104,7 @@ Alright!! So, you’ll need to navigate through Gmail (or whatever email provide
 <br><br>
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/a84879ae-e7ff-4e74-af34-c9f5398f514f" width="500" height="700">
+    <img src="https://github.com/user-attachments/assets/a84879ae-e7ff-4e74-af34-c9f5398f514f"  style="width: 70%; max-width: 500; max-height: 700;">
 </div>
 
 <br><br>
@@ -114,7 +114,7 @@ It should open a new tab named **Original Message**. Next you need to download t
 <br><br>
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/6d3beac8-2e5d-471a-a169-39df8c9eebbf" width="400" height="200">
+    <img src="https://github.com/user-attachments/assets/6d3beac8-2e5d-471a-a169-39df8c9eebbf"  style="width: 70%; max-width: 400; max-height: 200;">
 </div>
 
 <br><br>
@@ -124,7 +124,7 @@ Once you’ve acquired the .eml file use the EML analyzer to well uh analyse it 
 <br><br>
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/bb795a60-dad4-4921-8255-69f5ee967876" width="1000" height="500">
+    <img src="https://github.com/user-attachments/assets/bb795a60-dad4-4921-8255-69f5ee967876" style="width: 70%; max-width: 1000; max-height: 500;">
 </div>
 
 <br><br>
@@ -133,7 +133,7 @@ Here you can see what EML Analyzer has provided. [EML Analyzer](https://analyzer
 
 <br><br>
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/8ef90e1e-473d-4612-9632-1dea8831f4dc" width="800" height="450">
+    <img src="https://github.com/user-attachments/assets/8ef90e1e-473d-4612-9632-1dea8831f4dc" style="width: 70%; max-width: 800; max-height: 450;">
 </div>
 
 <br><br>
@@ -150,7 +150,7 @@ Here you can see what EML Analyzer has provided. [EML Analyzer](https://analyzer
 <br><br>
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/a181eea5-8979-4436-9f00-33302f2b3fc5" width="500" height="800">
+    <img src="https://github.com/user-attachments/assets/a181eea5-8979-4436-9f00-33302f2b3fc5"  style="width: 70%; max-width: 500; max-height: 800;">
 </div>
 
 <br><br>
