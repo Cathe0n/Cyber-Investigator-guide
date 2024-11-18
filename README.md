@@ -27,7 +27,7 @@ If a client reports an incident, advise them to secure the area, remove all pers
 Establishing an incident response plan will be necessary to accurately record and process the situation. (One will be provided soon ^-^ / )
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/95826c5d-d2f3-4c38-8106-38bc4d27b134" style="width: 60%; max-width: 500; max-height: 300;">
+    <img src="https://github.com/user-attachments/assets/95826c5d-d2f3-4c38-8106-38bc4d27b134" style="width: 70%; max-width: 500; max-height: 300;">
 </div>
 
 Upon arriving at the scene, start by interviewing the client with a few key questions to set the foundation for your investigation:
@@ -61,7 +61,7 @@ To do a full imaging of a system can take a long time and if it’s a server you
 Let’s talk about website-related incidents. One common issue is the defacement of a client’s website. If the client has set up their web server properly, they should have a Security Information and Event Management (SIEM) system or an Intrusion Detection System (IDS) in place to prevent malicious activity. If that’s the case, it’s mostly about finding the logs, reviewing them, and implementing a fix to prevent the incident from happening again. But it’s not that simple. 
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/abc58982-595b-404b-8706-4aee1fb2b1bb" width="800" height="500">
+    <img src="https://github.com/user-attachments/assets/abc58982-595b-404b-8706-4aee1fb2b1bb" style="width: 70%; max-width: 300; max-height: 300;">
 </div>
 
 Clients will want a thorough report and investigation done before moving into the eradication process. This is where the analysis part of the job comes in. Assuming the client has an SIEM/IDS system in place, your first task is to trace which machine or computer carried out the malicious activity.Any remote attack **MUST** originate from an infected machine, so identifying that machine is crucial. If it’s a network of machines involved, you’ll need to **ISOLATE** them by separating them from the main network. (Talk with the company’s engineer…They don’t have one ? Welp it’s now your job :P).
