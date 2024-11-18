@@ -27,7 +27,7 @@ If a client reports an incident, advise them to secure the area, remove all pers
 Establishing an incident response plan will be necessary to accurately record and process the situation. (One will be provided soon ^-^ / )
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/95826c5d-d2f3-4c38-8106-38bc4d27b134" width="500" height="300">
+    <img src="https://github.com/user-attachments/assets/95826c5d-d2f3-4c38-8106-38bc4d27b134" style="width: 60%; max-width: 500; max-height: 300;">
 </div>
 
 Upon arriving at the scene, start by interviewing the client with a few key questions to set the foundation for your investigation:
