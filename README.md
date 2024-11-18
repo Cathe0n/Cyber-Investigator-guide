@@ -168,7 +168,7 @@ Secondly, identify the aftermath of the attack.
 
 - What did the malware do to the system ?
 - Is it a backdoor ?
-- A ransom ?
+- A ransomware ?
   
 Try to identify the goal of this malicious actor. This can give you some sort of an idea of how to continue the investigation.
 <br><br>
