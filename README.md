@@ -20,32 +20,36 @@ Cyber Investigator Experimental Detachment
 
 # State of the crime scene.
 
-When processing evidence as an investigator, preserving the crime scene is crucial. Alternatively, changes made by an investigator must be documented to minimise the risk of evidence tampering. If a client contacts you to report an incident, advise them to secure the area, remove all personnel from the suspected crime scene, and ensure no one interacts with the environment. Establishing an incident response plan will be necessary to accurately record and process the situation.  (One will be provided soon ^-^ / )
+Preserving the crime scene is crucial for any investigator. Any changes made must be documented to minimize the risk of evidence tampering.
+If a client reports an incident, advise them to secure the area, remove all personnel from the suspected crime scene, and ensure no one interacts with the environment.
+Establishing an incident response plan will be necessary to accurately record and process the situation. (One will be provided soon ^-^ / )
 
 <div align="center">
     <img src="https://github.com/user-attachments/assets/95826c5d-d2f3-4c38-8106-38bc4d27b134" width="500" height="300">
 </div>
 
-Upon arriving at the scene, begin by interviewing the client with a few key questions to frame your investigation.
+Upon arriving at the scene, start by interviewing the client with a few key questions to set the foundation for your investigation:
 
-- What do you think has happened ? 
-- What systems are affected ?
-- How important is this system to production ?
+- What do you think has happened?
+- What systems are affected?
+- How important is this system to production?
 
-This can give you an idea/foundation on how to proceed with investigating the incident. Take note of how important the system is to the client, you cannot delay them too much as they are actively losing money. If there’s a time crunch the client should have a backup in place just for such an incident but if that’s not the case try to assist in setting up a backup system (technically not your job though sooo). DO NOT affect the crime scene without documentation. You either process the crime scene live and as fast as possible since it’s crucial to the client. This of course limits how many artefacts/crumbs can be gathered compared to the imaging process or also known as static analysis. 
+These questions will help you determine how to proceed. Keep in mind how critical the system is to the client—delays might cost them significant losses. If time is of the essence, they should ideally have a backup system ready for situations like this. If not, you could assist in setting up a backup (even though it’s technically outside your scope).
+
+Whatever you do, DO NOT alter the crime scene without proper documentation. If you must process the scene quickly, prioritize live analysis to address the client’s urgency. However, remember that this approach limits the number of artefacts or evidence you can gather compared to a more thorough imaging process (aka static analysis).
 
 ### Live analysis. 
-Before you get into messing everything up let's use [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) and [Autopsy](https://www.autopsy.com/) or any artifacts collecting appilcations to analyse what has happened recently. [FTK Imager](https://www.exterro.com/ftk-product-downloads/ftk-imager-4-7-3-81) Is also another great tool and can perfom a memory analysis on a live system. Depending on the situation, [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) can suffice but using both [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) and [FTK Imager](https://www.exterro.com/ftk-product-downloads/ftk-imager-4-7-3-81) is recommended. 
+Before diving into the investigation and potentially altering evidence, start by using tools like [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) and [Autopsy](https://www.autopsy.com/) or any other artifact collection applications to analyze recent activity. Another excellent option is [FTK Imager](https://www.exterro.com/ftk-product-downloads/ftk-imager-4-7-3-81) , which can also perform memory analysis on a live system. Depending on the situation, [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) may be sufficient, but for a more thorough investigation, using both [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) and [FTK Imager](https://www.exterro.com/ftk-product-downloads/ftk-imager-4-7-3-81) is recommended. 
 
 Once you have everything extracted and documented, you then can get into dynamic analysis of the malware/exploit or whatever. 
 
 ### Static analysis.
-If you're dealing with a live system when you arrived then **Static analysis** should be a second. Static analysis takes a lot of time and depending on the situation, a thorough live analysis of the affected machine should suffice. Anyways, first you need to remove every storage drives in the system since you don't want to deal with RAID systems and all that so better pay attention >->. You can use your own machine to conduct the imaging process, you can use [TestDisk](https://www.cgsecurity.org/wiki/TestDisk_Download) or [DMDE](https://dmde.com/). Depending on your preference you can generate an image in .dd or any other formats you prefer. 
+If you're dealing with a live system when you arrived then **Static analysis** should be a second priority. Static analysis takes a lot of time and depending on the situation, a thorough live analysis of the affected machine should suffice. Anyways, first you need to remove every storage drives in the system since you don't want to deal with RAID systems and missing a HDD and all that so better pay attention >->. You can use your own machine to conduct the imaging process, you can use [TestDisk](https://www.cgsecurity.org/wiki/TestDisk_Download) or [DMDE](https://dmde.com/).  Choose your preferred format, such as .dd or any other that fits your situation.
+
 > [!IMPORTANT]
 > Depending on your hardware data imaging will take AGES!!! '-'
 
-To do a full imaging of a system can take a long time and if it’s a server you can take a vacation and come back and it’s not finished imaging. It is also expensive, for example if a computer has a 1 TB storage device you also need a 1 TB storage device to do a full **physical imaging**. But you can also do a **Logical imaging** but it is **NOT** thorough so determine and choose wisely on how you will conduct your investigation. 
-
+To do a full imaging of a system can take a long time and if it’s a server you can take a vacation and come back and it’s not finished imaging. It is also expensive, imaging a 1 TB drive requires another 1 TB drive to store the image. to do a full **physical imaging**. That said, you have options. Physical imaging captures everything but takes the longest. **Logical imaging** is faster but less thorough. Carefully consider the situation to decide the best approach for your investigation.
 
 # Website incident handling (Phishing).
 
