@@ -2,7 +2,8 @@
 This guide aims to assist investigators focused on cybercrime by guiding incident handling, response, and thorough, methodical evidence processing. It is intended as a supplementary resource to support investigators and serves as a reminder rather than a standalone procedure.
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/fdb46b41-594a-4f8e-b736-184b7df58ce4" width="300" height="300">
+    <img src="https://github.com/user-attachments/assets/59ce240c-1679-459f-b8e4-3615f58dfd4e" width="300" height="300">
+
 </div>
 Cyber Investigator Experimental Detachment
 
