@@ -88,14 +88,16 @@ With these questions hopefully you can pinpoint WHEN the infection started and W
 
 ## Email Phishing campaign scenario. 
 
-According to Cloudfare 90% of cyber attacks came from Email Phishing campaigns. So, you shouldn’t be surprised :3.  First analyse the suspect email using EmailDossier or any other tools like EML analyzer which is awesome too. There are multiple way to check if the Email address smells fishy (see what I did there :3…No, I won’t stop), just read the results from EML analyzer. and if it looks fishy then you know this is where the infection came from…Unless there’s multiple phishing email…So uhh good luck!! ^-^. A phishing Email must have a payload and you can check to see whether the file is fishy or not. But these malicious actors are smart and sneaky so they’ll try their best to hide it >.<. Use these tools to help you analyse the payload.
+According to Cloudflare, 90% of cyber attacks come from email phishing campaigns so you shouldn’t be surprised! :3.  First, analyze the suspicious email using tools like EmailDossier or any other good options like EML Analyzer (which is awesome too). There are multiple ways to check if the email address looks fishy (see what I did there? :3… No, I won’t stop). Just read through the results from EML Analyzer, and if anything seems off, you’ll likely have your culprit. Unless, of course, there are multiple phishing emails... So, uh, good luck!! ^-^
+
+A phishing email must have a payload, and you can check to see whether the attached file is suspicious. But remember, these malicious actors are smart and sneaky, so they’ll do their best to hide it >.<. Use these tools to help you analyze the payload and uncover what’s really lurking inside.
 
 - [EML Analyzer](https://analyzer.sublime.security/)
 - [Email Dossier](https://centralops.net/co/EmailDossier.aspx)
 - [Mx Toolbox](https://lookup.mxtoolbox.com/dmarc/dmarc-email-tools)
 ### Email analysis.
 
-Alright!!, so you need to navigate through Gmail or whatever this company uses as their main Email provider and find a way to show it’s .eml file. In Gmail it is as shown in the picture. Once you click **Show original**
+Alright!! So, you’ll need to navigate through Gmail (or whatever email provider the company uses) and find a way to display the .eml file. In Gmail it is as shown in the picture. Once you click **Show original**
 
 <br><br>
 
@@ -105,7 +107,7 @@ Alright!!, so you need to navigate through Gmail or whatever this company uses a
 
 <br><br>
 
-It should open a new tab named **Original Message**. Next we need to download the .eml file.
+It should open a new tab named **Original Message**. Next you need to download the .eml file.
 
 <br><br>
 
