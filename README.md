@@ -49,21 +49,32 @@ If you're dealing with a live system when you arrived then **Static analysis** s
 > [!IMPORTANT]
 > Depending on your hardware data imaging will take AGES!!! '-'
 
-To do a full imaging of a system can take a long time and if it’s a server you can take a vacation and come back and it’s not finished imaging. It is also expensive, imaging a 1 TB drive requires another 1 TB drive to store the image. to do a full **physical imaging**. That said, you have options. Physical imaging captures everything but takes the longest. **Logical imaging** is faster but less thorough. Carefully consider the situation to decide the best approach for your investigation.
+To do a full imaging of a system can take a long time and if it’s a server you can take a vacation and come back and it’s not finished imaging. It is also expensive, imaging a 1 TB drive requires another 1 TB drive to store the image and this is called **Physical imaging**. That said, you have options. Physical imaging captures everything but takes the longest. **Logical imaging** is faster but less thorough. Carefully consider the situation to decide the best approach for your investigation. There's also **RAW imaging** but this for cases where you need more details or for **Corrupted data recovery**.
+
+> [!IMPORTANT]
+> Use **WRITE BLOCKER** I don't care how experienced you are a **WRITE BLOCKER IS ESSENTIAL** '~'
 
 # Website incident handling (Phishing).
 
-Let’s discuss Websites related incidents, one of the common incidents encountered is defacement of the client’s website. If the clients have set up their webserver properly they must have an SIEM system/IDS in place to deter anything malicious from happening and if that’s the case it’s just about finding the logs and reviewing them and implementing a fix so the incident doesn’t happen again. But it’s not that simple. 
+Let’s talk about website-related incidents. One common issue is the defacement of a client’s website. If the client has set up their web server properly, they should have a Security Information and Event Management (SIEM) system or an Intrusion Detection System (IDS) in place to prevent malicious activity. If that’s the case, it’s mostly about finding the logs, reviewing them, and implementing a fix to prevent the incident from happening again. But it’s not that simple. 
 
 <div align="center">
     <img src="https://github.com/user-attachments/assets/abc58982-595b-404b-8706-4aee1fb2b1bb" width="800" height="500">
 </div>
 
-Clients will want a thorough report and investigation done before moving into the eradication process. So this is where we go into the analysis part of the job. Assuming the client has an SIEM/IDS system implemented you must trace what machine or computer committed the malicious activity. Any remote attack MUST originate from an infected system so finding that machine is crucial if it’s a network of machines then ISOLATE them by separating them from the main network (Talk with the company’s engineer…They don’t have one ? Welp it’s now your job :P).
+Clients will want a thorough report and investigation done before moving into the eradication process. This is where the analysis part of the job comes in. Assuming the client has an SIEM/IDS system in place, your first task is to trace which machine or computer carried out the malicious activity.Any remote attack **MUST** originate from an infected machine, so identifying that machine is crucial. If it’s a network of machines involved, you’ll need to **ISOLATE** them by separating them from the main network. (Talk with the company’s engineer…They don’t have one ? Welp it’s now your job :P).
 
-Once isolated, perform the identification. If it’s a network of machines it’ll take more than you alone in order to make it quick. In a team, you must command one of your members to interview the employees. While you or another member starts working to isolate the machines from the network. 
+Once the machines are isolated, begin the identification process. If it's a network of infected machines, it’ll take more than just you to get it done quickly. You’ll need a team to move efficiently.
+
+Start by commanding one of your team members to interview the employees. They may have seen something unusual or noticed any signs of the attack before it escalated. Meanwhile, you or another member should work on isolating the machines from the network and securing any potential entry points.
+
+While the interviews are happening, keep an eye on the overall network.Once the network is contained, it’s time to dive into the forensics. Use your tools to analyze the compromised systems, check logs, and gather evidence that can point to how the attack occurred, what vulnerabilities were exploited, and what impact it had on the system.
+
+It’s also essential to document every action taken during this phase this will be crucial for building a report and providing evidence for any legal actions down the line.
+
 > [!NOTE]
 > This is assuming it’s a medium-large company if it’s small then taking it off the grid is needed MAYBE idk what you’re working with ‘ ^ ’
+> Act **SWIFTLY!!!** 'o'
 
 - What have you done in the past 24hr ?
 - Did you notice anything weird when using your computer ? A random CMD popped out of nowhere ? (Say a black box for the elderly >->)
@@ -73,7 +84,7 @@ Once isolated, perform the identification. If it’s a network of machines it’
 
 With these questions hopefully you can pinpoint WHEN the infection started and WHERE it originated. 
 > [!TIP]
-> Be FLEIXBLE!! Use these questions as a reference but ask what you need to know!!
+> Be **FLEXIBLE!!** Use these questions as a reference but ask what you need to know to assist you with the investigation!!
 
 ## Email Phishing campaign scenario. 
 
@@ -163,14 +174,14 @@ Try to identify the goal of this malicious actor. This can give you some sort of
 ### Malware Static analysis.
 
 **Windows systems**
-This is going to be a bit difficult. If the system is known to have already been infected and YOU have isolated it from the network you can do a full system imaging and analyse the malware safely with the copied image. This is known as static analysis and it’s the safest way you can analyse a system. If that’s the case you can use tools such as [IDA](https://hex-rays.com/ida-pro), [PE-Explorer](https://www.pe-explorer.com/) and [OllyDbg](https://www.ollydbg.de/download.htm)...Yeah, this is reverse engineering area WHICH will not be fully covered in this guide. (btw this for Windows ^-^). 
+This part is going to be a bit tricky. If the system is known to be infected and YOU have already isolated it from the network, you can perform a full system imaging and analyze the malware safely using the copied image. This is called static analysis, and it’s the safest way to analyze a system. If you’re going this route, you can use tools like  [IDA](https://hex-rays.com/ida-pro), [PE-Explorer](https://www.pe-explorer.com/) and [OllyDbg](https://www.ollydbg.de/download.htm).Yeah, this is reverse engineering area WHICH will not be fully covered in this guide. (I don't think you're going to analyse this deep in most cases! ^-^). 
 
 **Linux systems.**
 For Linux systems you can use [REMnux](https://docs.remnux.org/) this has everything you need to analyse malware in Linux systems.
 
 <br><br>
 ### Malware Dynamic Analysis.
-Another way is to dynamically analyse the malware. Each malware always ahve a goal and that goal requires processing power from the computer. You can use [Procmon](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon) from Microsoft itself to find suspicious services and processes running (Learn how to use this properly '-'). Another application called Winpatrol **did** exist but it has been sent to heaven (RIP Scotty, you were the best puppy Y-Y). [Procmon](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon) depending on the scenarios can help you understand what's the malware's goals are and can provide enough information to compile into a report. But a static analysis and reverse engineering can help you further understand better.
+Another way is to dynamically analyze the malware. Every piece of malware has a goal, and achieving that goal requires processing power from the infected machine. You can use [Procmon](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon) from Microsoft itself, to identify suspicious services and processes running on the system (make sure you learn how to use this properly '-'). There **was** also an application called **Winpatrol**, but unfortunately, it has been sent to heaven (RIP Scotty, you were the best puppy Y-Y). [Procmon](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon)  depending on the situation, can give you insights into what the malware’s goals are and provide enough data to include in your report. However, static analysis and reverse engineering can help you understand the malware in even greater detail.
 
 
 
