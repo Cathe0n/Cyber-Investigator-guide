@@ -36,13 +36,15 @@ Upon arriving at the scene, start by interviewing the client with a few key ques
 - What systems are affected?
 - How important is this system to production?
 
-These questions will help you determine how to proceed. Keep in mind how critical the system is to the client delays might cost them significant losses. If time is of the essence, they should ideally have a backup system ready for situations like this. If not, you could assist in setting up a backup (even though it’s technically outside your scope).
+These questions will help you determine how to proceed. Keep in mind how critical the system is to the client delays might cost them significant losses. If time is of the essence, they should ideally have a backup system ready for situations like this. If not, you could assist in setting up a backup (even though it’s technically not your job sooooo '-' ).
 
 Whatever you do, **DO NOT** alter the crime scene without proper documentation. If you must process the scene quickly, prioritize live analysis to address the client’s urgency. However, remember that this approach limits the number of artefacts or evidence you can gather compared to a more thorough imaging process (aka static analysis).
 
 ### Live analysis. 
 Before diving into the investigation and potentially altering evidence, start by using tools like [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) and [Autopsy](https://www.autopsy.com/) or any other artifact collection applications to analyze recent activity. Another excellent option is [FTK Imager](https://www.exterro.com/ftk-product-downloads/ftk-imager-4-7-3-81) , which can also perform memory analysis on a live system. Depending on the situation, [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) may be sufficient, but for a more thorough investigation, using both [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) and [FTK Imager](https://www.exterro.com/ftk-product-downloads/ftk-imager-4-7-3-81) is recommended. 
 
+[gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) is a powerful tool to have in your arsenal. Think of it as a collection of tools within a tool so uhh that's convinient! :3 
+This tool collects Windows event logs, registry hives, and much more. It’s also compatible with additional modules like Magnet RAM Capture Memory Acquisition and Volatility, both of which are excellent memory acquisition tools for live analysis. These are integrated into [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape), making it even more versatile. Tools like [Hayabusa](https://github.com/Yamato-Security/hayabusa) and others are also integrated, adding even more power to this incredible toolkit!! So, this is a must have in your USB!! ^o^
 Once you have everything extracted and documented, you then can get into dynamic analysis of the malware/exploit or whatever. 
 
 ### Static analysis.
