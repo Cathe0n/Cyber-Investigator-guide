@@ -10,9 +10,10 @@ Cyber Investigator Experimental Detachment
 
 # Incident handling/response
 
-[![Guide version](https://img.shields.io/github/tag/Cathe0n/Cyber-Investigator-guide?include_prereleases=&sort=semver&color=purple)](https://github.com/Cathe0n/Cyber-Investigator-guide/releases/)
+
+[![Guide Version](https://img.shields.io/github/tag/Cathe0n/Cyber-Investigator-guide?include_prereleases=&sort=semver&color=purple&label=Guide%20Version)](https://github.com/Cathe0n/Cyber-Investigator-guide/releases/)
 [![License](https://img.shields.io/badge/License-Public_Safety_Institution_-purple)](#license)
-[![issues - Cyber-Investigator-guide](https://img.shields.io/github/issues/Cathe0n/Cyber-Investigator-guide)](https://github.com/Cathe0n/Cyber-Investigator-guide/issues)
+[![Issues - Cyber-Investigator-guide](https://img.shields.io/github/issues/Cathe0n/Cyber-Investigator-guide?label=Issues)](https://github.com/Cathe0n/Cyber-Investigator-guide/issues)
 
 
 # Table of contents
