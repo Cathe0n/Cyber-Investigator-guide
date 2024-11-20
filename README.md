@@ -43,8 +43,26 @@ Whatever you do, **DO NOT** alter the crime scene without proper documentation. 
 ### Live analysis. 
 Before diving into the investigation and potentially altering evidence, start by using tools like [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) and [Autopsy](https://www.autopsy.com/) or any other artifact collection applications to analyze recent activity. Another excellent option is [FTK Imager](https://www.exterro.com/ftk-product-downloads/ftk-imager-4-7-3-81) , which can also perform memory analysis on a live system. Depending on the situation, [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) may be sufficient, but for a more thorough investigation, using both [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) and [FTK Imager](https://www.exterro.com/ftk-product-downloads/ftk-imager-4-7-3-81) is recommended. 
 
+You should start with memory analysis when performing live analysis, as RAM contains volatile evidence that cannot be replicated. Use [FTK Imager](https://www.exterro.com/ftk-product-downloads/ftk-imager-4-7-3-81)'s built-in memory acquisition feature to capture the memory or [Magnet RAM Capture Memory Acquisition](https://www.magnetforensics.com/resources/magnet-ram-capture/) , and then analyze it using [Volatility](https://github.com/volatilityfoundation/volatility).
+You can use other tools if you prefer, but I personally like using these :3.
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/605cb541-6a5f-431a-802b-19a4d01d9354" style="width: 70%; max-width: 500; max-height: 300;">
+</div>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/e7dfbaeb-7f27-49f5-921f-cb561a4516e1" style="width: 70%; max-width: 500; max-height: 300;">
+
+</div>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/bfd15450-109b-4c30-a9c3-b0f7256ad774" style="width: 70%; max-width: 500; max-height: 300;">
+
+</div>
+
+
 [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) is a powerful tool to have in your arsenal. Think of it as a collection of tools within a tool so uhh that's convinient! :3 
-This tool collects Windows event logs, registry hives, and much more. It’s also compatible with additional modules like [Magnet RAM Capture Memory Acquisition](https://www.magnetforensics.com/resources/magnet-ram-capture/) and [Volatility](https://github.com/volatilityfoundation/volatility), both of which are excellent memory acquisition tools for live analysis. These are integrated into [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape), making it even more versatile. Tools like [Hayabusa](https://github.com/Yamato-Security/hayabusa) and others are also integrated, adding even more power to this incredible toolkit!! So, this is a must have in your USB!! ^o^
+This tool collects Windows event logs, registry hives, and much more. It’s also compatible with additional modules like [Magnet RAM Capture Memory Acquisition](https://www.magnetforensics.com/resources/magnet-ram-capture/) a memory acquisition tool for live analysis. These are integrated into [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape), making it even more versatile. Tools like [Hayabusa](https://github.com/Yamato-Security/hayabusa) and others are also integrated, adding even more power to this incredible toolkit!! So, this is a must have in your USB!! ^o^
 ![gkape_NdhsNkcxzd](https://github.com/user-attachments/assets/5a3a4b4c-1ff2-4da8-a8b7-7dac64054d4d)
 
 
