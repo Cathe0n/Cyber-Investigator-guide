@@ -47,23 +47,28 @@ You should start with memory analysis when performing live analysis, as RAM cont
 You can use other tools if you prefer, but I personally like using these :3.
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/605cb541-6a5f-431a-802b-19a4d01d9354" style="width: 70%; max-width: 500; max-height: 300;">
+    <img src="https://github.com/user-attachments/assets/605cb541-6a5f-431a-802b-19a4d01d9354" style="width: 70%; max-width: 1000; max-height: 500;">
 </div>
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/e7dfbaeb-7f27-49f5-921f-cb561a4516e1" style="width: 70%; max-width: 500; max-height: 300;">
+    <img src="https://github.com/user-attachments/assets/e7dfbaeb-7f27-49f5-921f-cb561a4516e1" style="width: 70%; max-width: 1000; max-height: 500;">
 
 </div>
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/bfd15450-109b-4c30-a9c3-b0f7256ad774" style="width: 70%; max-width: 500; max-height: 300;">
+    <img src="https://github.com/user-attachments/assets/bfd15450-109b-4c30-a9c3-b0f7256ad774" style="width: 70%; max-width: 1000; max-height: 500;">
 
 </div>
 
 
 [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) is a powerful tool to have in your arsenal. Think of it as a collection of tools within a tool so uhh that's convinient! :3 
 This tool collects Windows event logs, registry hives, and much more. It’s also compatible with additional modules like [Magnet RAM Capture Memory Acquisition](https://www.magnetforensics.com/resources/magnet-ram-capture/) a memory acquisition tool for live analysis. These are integrated into [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape), making it even more versatile. Tools like [Hayabusa](https://github.com/Yamato-Security/hayabusa) and others are also integrated, adding even more power to this incredible toolkit!! So, this is a must have in your USB!! ^o^
-![gkape_NdhsNkcxzd](https://github.com/user-attachments/assets/5a3a4b4c-1ff2-4da8-a8b7-7dac64054d4d)
+
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/5a3a4b4c-1ff2-4da8-a8b7-7dac64054d4d" style="width: 70%; max-width: 1000; max-height: 500;">
+
+</div>
 
 
 
