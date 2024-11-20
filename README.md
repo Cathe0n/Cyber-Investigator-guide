@@ -47,16 +47,16 @@ You should start with memory analysis when performing live analysis, as RAM cont
 You can use other tools if you prefer, but I personally like using these :3.
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/605cb541-6a5f-431a-802b-19a4d01d9354" style="width: 70%; max-width: 1000; max-height: 500;">
+    <img src="https://github.com/user-attachments/assets/605cb541-6a5f-431a-802b-19a4d01d9354" style="width: 100%; max-width: 1000; max-height: 500;">
 </div>
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/e7dfbaeb-7f27-49f5-921f-cb561a4516e1" style="width: 70%; max-width: 1000; max-height: 500;">
+    <img src="https://github.com/user-attachments/assets/e7dfbaeb-7f27-49f5-921f-cb561a4516e1" style="width: 100%; max-width: 1000; max-height: 500;">
 
 </div>
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/bfd15450-109b-4c30-a9c3-b0f7256ad774" style="width: 70%; max-width: 1000; max-height: 500;">
+    <img src="https://github.com/user-attachments/assets/bfd15450-109b-4c30-a9c3-b0f7256ad774" style="width: 100%; max-width: 1000; max-height: 500;">
 
 </div>
 
