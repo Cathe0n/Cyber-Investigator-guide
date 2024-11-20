@@ -66,7 +66,7 @@ This tool collects Windows event logs, registry hives, and much more. It’s als
 
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/5a3a4b4c-1ff2-4da8-a8b7-7dac64054d4d" style="width: 70%; max-width: 1000; max-height: 500;">
+    <img src="https://github.com/user-attachments/assets/5a3a4b4c-1ff2-4da8-a8b7-7dac64054d4d" style="width: 100%; max-width: 1000; max-height: 500;">
 
 </div>
 
