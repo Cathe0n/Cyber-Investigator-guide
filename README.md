@@ -36,7 +36,7 @@ Upon arriving at the scene, start by interviewing the client with a few key ques
 - What systems are affected?
 - How important is this system to production?
 
-These questions will help you determine how to proceed. Keep in mind how critical the system is to the client delays might cost them significant losses. If time is of the essence, they should ideally have a backup system ready for situations like this. If not, you could assist in setting up a backup (even though it’s technically not your job sooooo '-' ).
+These questions will help you determine how to proceed. Keep in mind how critical the system is to the client delays might cost them significant losses. If time is of the essence, they should ideally have a backup system ready for situations like this. If not, you could assist in setting up a backup (even though it’s technically not your job sooooo '-').
 
 Whatever you do, **DO NOT** alter the crime scene without proper documentation. If you must process the scene quickly, prioritize live analysis to address the client’s urgency. However, remember that this approach limits the number of artefacts or evidence you can gather compared to a more thorough imaging process (aka static analysis).
 
