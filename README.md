@@ -41,12 +41,14 @@ These questions will help you determine how to proceed. Keep in mind how critica
 
 Whatever you do, **DO NOT** alter the crime scene without proper documentation. If you must process the scene quickly, prioritize live analysis to address the client’s urgency. However, remember that this approach limits the number of artefacts or evidence you can gather compared to a more thorough imaging process (aka static analysis).
 
-### Live analysis. 
+## Live analysis. 
 Before diving into the investigation and potentially altering evidence, start by using tools like [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) and [Autopsy](https://www.autopsy.com/) or any other artifact collection applications to analyze recent activity. Another excellent option is [FTK Imager](https://www.exterro.com/ftk-product-downloads/ftk-imager-4-7-3-81) , which can also perform memory analysis on a live system. Depending on the situation, [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) may be sufficient, but for a more thorough investigation, using both [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) and [FTK Imager](https://www.exterro.com/ftk-product-downloads/ftk-imager-4-7-3-81) is recommended. 
 
 You should start with memory analysis when performing live analysis, as RAM contains volatile evidence that cannot be replicated. Use [FTK Imager](https://www.exterro.com/ftk-product-downloads/ftk-imager-4-7-3-81)'s built-in memory acquisition feature to capture the memory or [Magnet RAM Capture Memory Acquisition](https://www.magnetforensics.com/resources/magnet-ram-capture/) , and then analyze it using [Volatility](https://github.com/volatilityfoundation/volatility).
 You can use other tools if you prefer, but I personally like using these :3.
 
+
+### Memory acquisition using FTK Imager
 <div align="center">
     <img src="https://github.com/user-attachments/assets/605cb541-6a5f-431a-802b-19a4d01d9354" style="width: 100%; max-width: 1000; max-height: 500;">
 </div>
@@ -56,12 +58,16 @@ You can use other tools if you prefer, but I personally like using these :3.
 
 </div>
 
+### Using Volatility
+
 <div align="center">
     <img src="https://github.com/user-attachments/assets/bfd15450-109b-4c30-a9c3-b0f7256ad774" style="width: 100%; max-width: 1000; max-height: 500;">
 
 </div>
 
 <br>
+
+### pagefile.sys analysis
 
 You can acquire pagefile.sys using [FTK Imager](https://www.exterro.com/ftk-product-downloads/ftk-imager-4-7-3-81) as well and extract the information using [bulk_extractor](https://github.com/simsong/bulk_extractor) OR read it through a Hex editor like 
 [ImHex](https://github.com/WerWolv/ImHex) !!! ^o^. You can use [Autopsy](https://www.autopsy.com/) to read it as well but using [bulk_extractor](https://github.com/simsong/bulk_extractor) is better me thinks :3
@@ -73,7 +79,7 @@ You can acquire pagefile.sys using [FTK Imager](https://www.exterro.com/ftk-prod
 </div>
 
 <br>
-In order to keep things simple put bulk_extractor.exe in the same folder as your pagefile.sys file and open the terminal in the folder. 
+In order to keep things simple put bulk_extractor.exe in the same folder as your pagefile.sys file and open a terminal in the folder. 
 <br>
 
 <br>
@@ -85,6 +91,8 @@ In order to keep things simple put bulk_extractor.exe in the same folder as your
 <br>
 
 Run  ```./bulk_extractor64.exe -o output .\pagefile.sys```
+
+<br>
 
 <br>
 
@@ -107,16 +115,16 @@ Once it's finished you can analyse the output using your favourite text editor..
 <div align="center">
     <img src="https://github.com/user-attachments/assets/8353a26d-6d34-466f-b650-001d1a2c8b41" style="width: 100%; max-width: 1000; max-height: 500;">
     
-
+</div>
 
 <div align="center">
     <img src="https://github.com/user-attachments/assets/4e67af3a-c496-4964-97e2-9dbe6b6e9a4b" style="width: 100%; max-width: 1000; max-height: 500;">
     
 </div>
 
-
 <br><br>
 
+### gKAPE
 
 [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) is a powerful tool to have in your arsenal. Think of it as a collection of tools within a tool so uhh that's convinient! :3 
 This tool collects Windows event logs, registry hives, and much more. It’s also compatible with additional modules like [Magnet RAM Capture Memory Acquisition](https://www.magnetforensics.com/resources/magnet-ram-capture/) a memory acquisition tool for live analysis. These are integrated into [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape), making it even more versatile. Tools like [Hayabusa](https://github.com/Yamato-Security/hayabusa) and others are also integrated, adding even more power to this incredible toolkit!! So, this is a must have in your USB!! ^o^
@@ -128,7 +136,6 @@ This tool collects Windows event logs, registry hives, and much more. It’s als
 </div>
 
 
-<br>
 
 Once you have everything extracted and documented, you then can get into dynamic analysis of the malware/exploit or whatever. 
 
