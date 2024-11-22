@@ -64,7 +64,7 @@ You can use other tools if you prefer, but I personally like using these :3.
 <br><br>
 
 > [!NOTE]
-> You can acquire pagefile.sys using [FTK Imager](https://www.exterro.com/ftk-product-downloads/ftk-imager-4-7-3-81) as well and read it through a Hex editor like [ImHex](https://github.com/WerWolv/ImHex)!!! ^o^
+> You can acquire pagefile.sys using [FTK Imager](https://www.exterro.com/ftk-product-downloads/ftk-imager-4-7-3-81) as well and extract the information using [bulk_extractor](https://github.com/simsong/bulk_extractor) OR read it through a Hex editor like [ImHex](https://github.com/WerWolv/ImHex)!!! ^o^. You can use [Autopsy](https://www.autopsy.com/) to read as well but using [bulk_extractor](https://github.com/simsong/bulk_extractor) is better me thinks :3
 
 [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) is a powerful tool to have in your arsenal. Think of it as a collection of tools within a tool so uhh that's convinient! :3 
 This tool collects Windows event logs, registry hives, and much more. It’s also compatible with additional modules like [Magnet RAM Capture Memory Acquisition](https://www.magnetforensics.com/resources/magnet-ram-capture/) a memory acquisition tool for live analysis. These are integrated into [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape), making it even more versatile. Tools like [Hayabusa](https://github.com/Yamato-Security/hayabusa) and others are also integrated, adding even more power to this incredible toolkit!! So, this is a must have in your USB!! ^o^
