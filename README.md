@@ -61,10 +61,62 @@ You can use other tools if you prefer, but I personally like using these :3.
 
 </div>
 
+<br>
+
+You can acquire pagefile.sys using [FTK Imager](https://www.exterro.com/ftk-product-downloads/ftk-imager-4-7-3-81) as well and extract the information using [bulk_extractor](https://github.com/simsong/bulk_extractor) OR read it through a Hex editor like 
+[ImHex](https://github.com/WerWolv/ImHex) !!! ^o^. You can use [Autopsy](https://www.autopsy.com/) to read it as well but using [bulk_extractor](https://github.com/simsong/bulk_extractor) is better me thinks :3
+<br>
+
+<br>
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/30d97539-d8f2-4e44-a4f6-1f96d94faecb" style="width: 100%; max-width: 1000; max-height: 500;">
+</div>
+
+<br>
+In order to keep things simple put bulk_extractor.exe in the same folder as your pagefile.sys file and open the terminal in the folder. 
+<br>
+
+<br>
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/d5ba5026-5b90-4406-bba5-58eab4e15a0c" style="width: 100%; max-width: 1000; max-height: 500;"> 
+</div>
+<br>
+
+<br>
+
+Run  ```./bulk_extractor64.exe -o output .\pagefile.sys```
+
+<br>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/b7baa2e0-17be-4225-9124-c1ba965b0e23" style="width: 100%; max-width: 1000; max-height: 500;">
+    
+</div>
+
+<br>
+
+Once it's finished you can analyse the output using your favourite text editor...I'm using Notepad but I know you'll use something cooler '-'
+
+<br>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/88fae686-de6a-4c0b-a2cf-08a2dac66671" style="width: 100%; max-width: 1000; max-height: 500;">
+
+</div>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/8353a26d-6d34-466f-b650-001d1a2c8b41" style="width: 100%; max-width: 1000; max-height: 500;">
+    
+
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/4e67af3a-c496-4964-97e2-9dbe6b6e9a4b" style="width: 100%; max-width: 1000; max-height: 500;">
+    
+</div>
+
+
 <br><br>
 
-> [!NOTE]
-> You can acquire pagefile.sys using [FTK Imager](https://www.exterro.com/ftk-product-downloads/ftk-imager-4-7-3-81) as well and extract the information using [bulk_extractor](https://github.com/simsong/bulk_extractor) OR read it through a Hex editor like [ImHex](https://github.com/WerWolv/ImHex)!!! ^o^. You can use [Autopsy](https://www.autopsy.com/) to read as well but using [bulk_extractor](https://github.com/simsong/bulk_extractor) is better me thinks :3
 
 [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) is a powerful tool to have in your arsenal. Think of it as a collection of tools within a tool so uhh that's convinient! :3 
 This tool collects Windows event logs, registry hives, and much more. It’s also compatible with additional modules like [Magnet RAM Capture Memory Acquisition](https://www.magnetforensics.com/resources/magnet-ram-capture/) a memory acquisition tool for live analysis. These are integrated into [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape), making it even more versatile. Tools like [Hayabusa](https://github.com/Yamato-Security/hayabusa) and others are also integrated, adding even more power to this incredible toolkit!! So, this is a must have in your USB!! ^o^
