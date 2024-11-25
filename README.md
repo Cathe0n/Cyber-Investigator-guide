@@ -1,4 +1,4 @@
-# Cyber Investigator guide
+# Cyber Investigator guide.
 This guide aims to assist investigators focused on cybercrime by guiding incident handling, response, and thorough, methodical evidence processing. It is intended as a supplementary resource to support investigators and serves as a reminder rather than a standalone procedure.
 
 <div align="center">
@@ -8,7 +8,7 @@ This guide aims to assist investigators focused on cybercrime by guiding inciden
 
 Cyber Investigator Experimental Detachment
 
-# Incident handling/response
+# Incident handling/response.
 
 
 [![Guide Version](https://img.shields.io/github/tag/Cathe0n/Cyber-Investigator-guide?include_prereleases=&sort=semver&color=purple&label=Guide%20Version)](https://github.com/Cathe0n/Cyber-Investigator-guide/releases/)
@@ -16,7 +16,7 @@ Cyber Investigator Experimental Detachment
 [![Issues - Cyber-Investigator-guide](https://img.shields.io/github/issues/Cathe0n/Cyber-Investigator-guide?label=Issues)](https://github.com/Cathe0n/Cyber-Investigator-guide/issues)
 
 
-# Table of contents
+# Table of contents.
 
 - [Usage](#usage)
 
@@ -45,10 +45,10 @@ Whatever you do, **DO NOT** alter the crime scene without proper documentation. 
 Before diving into the investigation and potentially altering evidence, start by using tools like [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) and [Autopsy](https://www.autopsy.com/) or any other artifact collection applications to analyze recent activity. Another excellent option is [FTK Imager](https://www.exterro.com/ftk-product-downloads/ftk-imager-4-7-3-81) , which can also perform memory analysis on a live system. Depending on the situation, [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) may be sufficient, but for a more thorough investigation, using both [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) and [FTK Imager](https://www.exterro.com/ftk-product-downloads/ftk-imager-4-7-3-81) is recommended. 
 
 You should start with memory analysis when performing live analysis, as RAM contains volatile evidence that cannot be replicated. Use [FTK Imager](https://www.exterro.com/ftk-product-downloads/ftk-imager-4-7-3-81)'s built-in memory acquisition feature to capture the memory or [Magnet RAM Capture Memory Acquisition](https://www.magnetforensics.com/resources/magnet-ram-capture/) , and then analyze it using [Volatility](https://github.com/volatilityfoundation/volatility).
-You can use other tools if you prefer, but I personally like using these :3.
+You can use other tools if you prefer, but I personally like using these :3
 
 
-### Memory acquisition using FTK Imager
+### Memory acquisition using FTK Imager.
 <div align="center">
     <img src="https://github.com/user-attachments/assets/605cb541-6a5f-431a-802b-19a4d01d9354" style="width: 100%; max-width: 1000; max-height: 500;">
 </div>
@@ -58,7 +58,7 @@ You can use other tools if you prefer, but I personally like using these :3.
 
 </div>
 
-### Using Volatility
+### Using Volatility.
 
 <div align="center">
     <img src="https://github.com/user-attachments/assets/bfd15450-109b-4c30-a9c3-b0f7256ad774" style="width: 100%; max-width: 1000; max-height: 500;">
@@ -67,10 +67,10 @@ You can use other tools if you prefer, but I personally like using these :3.
 
 <br>
 
-### pagefile.sys analysis
+### pagefile.sys analysis.
 
 You can acquire pagefile.sys using [FTK Imager](https://www.exterro.com/ftk-product-downloads/ftk-imager-4-7-3-81) or [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) as well and extract the information using [bulk_extractor](https://github.com/simsong/bulk_extractor) OR read it through a Hex editor like 
-[ImHex](https://github.com/WerWolv/ImHex) !!! ^o^. You can use [Autopsy](https://www.autopsy.com/) to read it as well but using [bulk_extractor](https://github.com/simsong/bulk_extractor) is better me thinks :3
+[ImHex](https://github.com/WerWolv/ImHex) !!! ^o^. You can use [Autopsy](https://www.autopsy.com/) to read it as well but using [bulk_extractor](https://github.com/simsong/bulk_extractor) is better imo :3 as it's more conclusive.
 <br>
 
 <br>
@@ -122,24 +122,165 @@ Once it's finished you can analyse the output using your favourite text editor..
     
 </div>
 
-<br><br>
+<br>
 
-### gKAPE
+You'll need to analyse this closely and have a goal in mind. What is you're looking for ? 
+
+An application (.exe) ?
+A background process/service ?
+A specific thumbnail/image ?
+
+Alternatively, you can use [Belkansoft](https://belkasoft.com/get) though I personally don’t have much experience with it. With [Belkansoft](https://belkasoft.com/get) you can easily analyze pagefile.sys and view its contents, including images and thumbnails from websites. Plus, it has a GUI, sooo... that’s poggers. BUT! the outputs from [bulk_extractor](https://github.com/simsong/bulk_extractor) are already sufficient. 
+
+> [!IMPORTANT]
+> Use whatever tools you feel comfortable with, do some scenarios with them! >.>
+
+<br>
+
+## gKAPE.
 
 [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) is a powerful tool to have in your arsenal. Think of it as a collection of tools within a tool so uhh that's convinient! :3 
 This tool collects Windows event logs, registry hives, and much more. It’s also compatible with additional modules like [Magnet RAM Capture Memory Acquisition](https://www.magnetforensics.com/resources/magnet-ram-capture/) a memory acquisition tool for live analysis. These are integrated into [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape), making it even more versatile. Tools like [Hayabusa](https://github.com/Yamato-Security/hayabusa) and others are also integrated, adding even more power to this incredible toolkit!! So, this is a must have in your USB!! ^o^
-
 
 <div align="center">
     <img src="https://github.com/user-attachments/assets/5a3a4b4c-1ff2-4da8-a8b7-7dac64054d4d" style="width: 100%; max-width: 1000; max-height: 500;">
 
 </div>
 
+### Recommended way of using gKAPE.
+
+One way of using [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) is selecting _BasicCollection_ and _SANS_Triage_. By choosing these options, you can grab Event logs and Windows registry hives, which are crucial for identifying what happened during the incident. These selections will also help you collect artifacts that can give insight into the system’s behavior, user activity, and potential malicious actions. Both of these modules are great for quickly gathering key data that will be essential in your investigation sooo it's poggers for live analysis. From there, you can analyze the collected data for clues to track down the malicious activity frfr.
+<br>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/51054dcc-0e1c-4da1-b137-e1a7bb1d951a" style="width: 100%; max-width: 1000; max-height: 500;">
+
+</div>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/d8b79736-8bd4-4ebb-9d73-a79ab7af240f" style="width: 100%; max-width: 1000; max-height: 500;">
+</div>
+<br>
+
+Here's some example of the results from [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape).
+<br>
 
 
-Once you have everything extracted and documented, you then can get into dynamic analysis of the malware/exploit or whatever. 
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/c42ceedb-0977-4b01-8ff9-4524af8d4152" style="width: 100%; max-width: 1000; max-height: 500;">
+</div>
 
-### Static analysis.
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/da77662e-76eb-4e95-8bea-90b41688afb7" style="width: 100%; max-width: 1000; max-height: 500;">
+</div>
+
+<br>
+
+### History of launched applications from the system | PcaAppLaunchDic.txt.
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/a4d88224-0d10-482b-a67b-4e4916f03ded" style="width: 100%; max-width: 1000; max-height: 500;">
+</div>
+<br>
+
+### Background application processes log | PcaGeneralDb0.txt.
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/423339b7-a5ae-480a-a0f5-291da1082ee2" style="width: 100%; max-width: 1000; max-height: 500;">
+</div>
+<br>
+
+### Windows Defender log | MPLog-69420.log (I know it's Microsoft Defender '-').
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/6cd65a24-f8f7-44ff-9e2b-397e32a09e7a" style="width: 100%; max-width: 1000; max-height: 500;">
+</div>
+
+<br>
+
+## Event log analysis (sorta >->)
+
+Event log or ```winevt``` is absolutely the most useful system for you. Windows keeps logs of what happens to a system in the event manager so if the computer did something then event manager knows about it. So analysing this in details can give insights of what happened or what's happening! You should check these three logs ```Microsoft-Windows-Windows Defender%4Operational.evtx```, ```Security.evtx``` and ```System.evtx```. Now, usually you should have a laptop on site...right ? If you do, you can use [EventLogExpert](https://github.com/microsoft/EventLogExpert) by analysing the log files on your own machine using [EventLogExpert](https://github.com/microsoft/EventLogExpert) BUT! you can use the normal Event Viewer built into Windows, just keep in mind you are _using_ evidence so uhhh '-'
+
+### Microsoft-Windows-Windows Defender%4Operational.evtx
+
+The event log provides information about the **Windows Defender processes log**, offering an in-depth view of what Windows Defender is doing and the processes it’s handling. Essentially, it’s a more detailed look of ```MPLog```. This can come in handy if you're looking for anything suspicious like the disabling of Windows defender or any changes made by the user towards Windows Defender. It is suggested that you use ```MPLog``` as well to correlate the event :3
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/d5ce59e2-d3c5-44f7-bc88-f2110364f95c" style="width: 100%; max-width: 1000; max-height: 500;">
+</div>
+
+### Security.evtx
+
+This is a crucial event log to analyze... Well, I mean, all logs are important, but this one is especially handy >->.
+
+This log provides details about administrative powers that have been granted and to whom. Think of it like those **UAC** (User Account Control) prompts asking Yes or No for elevated privileges. Using this log, you can track which applications requested admin rights and what they were trying to access.
+
+This is why **RBAC** (Role-Based Access Control) is so important! :> in short, this event logs keeps track of security events.
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/44c1339d-d1d5-435d-a6f0-9231a9ed08c4" style="width: 100%; max-width: 1000; max-height: 500;">
+</div>
+
+### System.evtx
+
+System.evtx is a crucial log file that stores system event records on Windows operating systems. It’s part of the Event Viewer system, which helps you troubleshoot system operations so if anything goes wrong the error log should be stored here.
+
+This event log provides valuable information about system processes and services, including any error codes that may help identify issues.
+
+- Hardware Events: Logs issues or changes involving hardware, such as driver updates, device disconnections, or hardware failures.
+- System Services: Tracks the startup, shutdown, and behavior of essential Windows services.
+- System Errors: Records critical issues affecting the operating system's stability or functionality, such as blue screens or kernel errors.
+- Startup and Shutdown: Includes details about boot processes and shutdown operations.
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/966e3fdd-0e97-474c-b54a-6503bf0d621c" style="width: 100%; max-width: 1000; max-height: 500;">
+</div>
+
+Time to time, it’s useful to track the uptime of a system or determine when it was turned on or of. This can help narrow your investigation to a specific time window. By searching for a specific application that always starts on boot, you can identify when the machine was powered on. 
+One such application is EventLog what a surprise, right? EventLog, along with many other crucial system applications, starts early in the boot process, making it a useful tool for this purpose. Orrr...Another key application to track is Explorer, as it often runs in the background and can help pinpoint system activity during startup or shutdown.
+<br>
+
+| Use case             | Order | Logfile | Source        | Level  | Event ID | Event Description                                                                 | Description                                                       |
+|----------------------|-------|---------|---------------|--------|----------|----------------------------------------------------------------------------------|-------------------------------------------------------------------|
+| Planned reboot       | 1     | System  | User32        | Info   | 1074     | The process Explorer.EXE has initiated the restart of computer                   | The process Explorer.EXE has initiated the restart of computer on behalf of user Administrator. |
+| Planned reboot       | 2     | System  | Event Log     | Info   | 6006     | The Event log service was stopped.                                                |                                                                   |
+| Planned reboot       | 3     | System  | Kernel Power  | Info   | 109      | The kernel power manager has initiated a shutdown transition.                    |                                                                   |
+| Planned reboot       | 4     | System  | Kernel Boot   | Info   | 13       | The operating system is shutting down at system time 2024-11-25T08:11:45.765230100Z. |                                                                   |
+| Planned reboot       | 5     | System  | Kernel General| Info   | 20       | The last shutdown's success status was true.                                      |                                                                   |
+| Planned reboot       | 6     | System  | Event Log     | Info   | 12       | The operating system started at system time 2024-11-25T08:12:32.486934500Z.      |                                                                   |
+| Planned reboot       | 7     | System  | Event Log     | Info   | 6005     | The Event log service was started.                                                |                                                                   |
+| Planned reboot       | 8     | System  | Event Log     | Info   | 6013     | The system uptime is 10 seconds.                                                  |                                                                   |
+| Planned shutdown     | 1     | System  | User32        | Info   | 1074     | The process Explorer.EXE has initiated the shutdown of computer                  | The process Explorer.EXE has initiated the shutdown of computer on behalf of user Administrator. |
+| Planned shutdown     | 2     | System  | Event Log     | Info   | 6006     | The Event log service was stopped.                                                |                                                                   |
+| Planned shutdown     | 3     | System  | Kernel Power  | Info   | 109      | The kernel power manager has initiated a shutdown transition.                    |                                                                   |
+| Planned shutdown     | 4     | System  | Kernel Boot   | Info   | 13       | The operating system is shutting down at system time 2024-11-25T08:11:45.765230100Z. |                                                                   |
+| Planned shutdown     | 5     | System  | Kernel General| Info   | 20       | The last shutdown's success status was true.                                      |                                                                   |
+| Planned shutdown     | 6     | System  | Event Log     | Info   | 12       | The operating system started at system time 2024-11-25T08:12:32.486934500Z.      |                                                                   |
+| Planned shutdown     | 7     | System  | Event Log     | Info   | 6005     | The Event log service was started.                                                |                                                                   |
+| Planned shutdown     | 8     | System  | Event Log     | Info   | 6013     | The system uptime is 10 seconds.                                                  |                                                                   |
+| Unexpected shutdown  | 1     | System  | Kernel General| Info   | 12       | The operating system started at system time 2024-11-25T08:12:32.486934500Z.      |                                                                   |
+| Unexpected shutdown  | 2     | System  | Kernel General| Info   | 20       | The last shutdown's success status was false.                                     |                                                                   |
+| Unexpected shutdown  | 3     | System  | Kernel General| Critical | 20   | The system has rebooted without cleanly shutting down first.                       | This error could be caused if the system shuts down unexpectedly. |
+| Unexpected shutdown  | 4     | System  | Event Log     | Error  | 6008     | The previous system shutdown at 02:11:03 PM on 2024-11-25 was unexpected.          |                                                                   |
+| Unexpected shutdown  | 5     | System  | Event Log     | Info   | 6005     | The Event log service was started.                                                |                                                                   |
+| Unexpected shutdown  | 6     | System  | Event Log     | Info   | 6013     | The system uptime is 10 seconds.                                                  |                                                                   |
+| Unexpected shutdown  | 7     | System  | User32        | Warning | 1076    | The reason supplied by user Administrator for the last unexpected shutdown of this computer is: check process name. |                     |
+| LSASS process crash  | 1     | System  | User32        | Info   | 1074     | The process wininit.exe has initiated the restart of computer                     | The process wininit.exe has initiated the restart of computer on behalf of user TRFSF01. |
+| LSASS process crash  | 2     | System  | Kernel General| Info   | 13       | The operating system started at system time 2024-11-25T08:12:32.486934500Z.      |                                                                   |
+| LSASS process crash  | 3     | System  | Kernel General| Info   | 20       | The last shutdown's success status was true.                                      |                                                                   |
+| LSASS process crash  | 4     | System  | Event Log     | Error  | 6008     | The previous system shutdown at 01:21:34 PM on 2024-11-25 was unexpected.          |                                                                   |
+| LSASS process crash  | 5     | System  | Event Log     | Info   | 6005     | The Event log service was started.                                                |                                                                   |
+| LSASS process crash  | 6     | System  | Event Log     | Info   | 6013     | The system uptime is 10 seconds.                                                  |                                                                   |
+| LSASS process crash  | 7     | System  | User32        | Warning | 1076    | The reason supplied by user Administrator for the last unexpected shutdown of this computer is: check process name. |                     |
+
+<br>
+Use the table above to find the information you need for your investigation! You can search for more but these are the ones I find useful ^-^
+
+This is mostly computer forensics, we're going to go web forensics now!
+
+## Browser analysis (Live).
+
+# Static analysis.
 If you're dealing with a live system when you arrived then **Static analysis** should be a second priority. Static analysis takes a lot of time and depending on the situation, a thorough live analysis of the affected machine should suffice. Anyways, first you need to remove every storage drives in the system since you don't want to deal with RAID systems and missing a HDD and all that so better pay attention >->. You can use your own machine to conduct the imaging process, you can use [TestDisk](https://www.cgsecurity.org/wiki/TestDisk_Download) or [DMDE](https://dmde.com/).  Choose your preferred format, such as .dd or any other that fits your situation.
 
 > [!IMPORTANT]
