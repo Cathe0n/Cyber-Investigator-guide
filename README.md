@@ -122,7 +122,7 @@ Once it's finished you can analyse the output using your favourite text editor..
 
 <br>
 
-You'll need to analyse this closely and have a goal in mind. What is you're looking for ? 
+You'll need to analyse this closely and have a goal in mind. What is it you're looking for ? 
 
 An application (.exe) ?
 A background process/service ?
