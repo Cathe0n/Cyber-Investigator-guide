@@ -279,6 +279,8 @@ This is mostly computer forensics, we're going to go web forensics now!
 
 ## Browser analysis (Live).
 
+
+
 # Static analysis.
 If you're dealing with a live system when you arrived then **Static analysis** should be a second priority. Static analysis takes a lot of time and depending on the situation, a thorough live analysis of the affected machine should suffice. Anyways, first you need to remove every storage drives in the system since you don't want to deal with RAID systems and missing a HDD and all that so better pay attention >->. You can use your own machine to conduct the imaging process, you can use [TestDisk](https://www.cgsecurity.org/wiki/TestDisk_Download) or [DMDE](https://dmde.com/).  Choose your preferred format, such as .dd or any other that fits your situation.
 
@@ -290,9 +292,9 @@ To do a full imaging of a system can take a long time and if it’s a server you
 > [!IMPORTANT]
 > Use **WRITE BLOCKER** I don't care how experienced you are, a **WRITE BLOCKER IS ESSENTIAL** '~'
 
-# Website incident handling (Phishing).
+# Incident handling/Response: Phishing.
 
-Let’s talk about website-related incidents. One common issue is the defacement of a client’s website. If the client has set up their web server properly, they should have a Security Information and Event Management (SIEM) system or an Intrusion Detection System (IDS) in place to prevent malicious activity. If that’s the case, it’s mostly about finding the logs, reviewing them, and implementing a fix to prevent the incident from happening again. But it’s not that simple. 
+Let’s talk about Phishing incidents. One common issue is the defacement of a client’s website. If the client has set up their web server properly, they should have a Security Information and Event Management (SIEM) system or an Intrusion Detection System (IDS) in place to prevent malicious activity. If that’s the case, it’s mostly about finding the logs, reviewing them, and implementing a fix to prevent the incident from happening again. But it’s not that simple. 
 
 <div align="center">
     <img src="https://github.com/user-attachments/assets/abc58982-595b-404b-8706-4aee1fb2b1bb" style="width: 70%; max-width: 300; max-height: 300;">
@@ -419,7 +421,7 @@ For Linux systems you can use [REMnux](https://docs.remnux.org/) this has everyt
 
 <br><br>
 ### Malware Dynamic Analysis.
-Another way is to dynamically analyze the malware. Every piece of malware has a goal, and achieving that goal requires processing power from the infected machine. You can use [Procmon](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon) from Microsoft itself, to identify suspicious services and processes running on the system (make sure you learn how to use this properly '-'). There **was** also an application called **Winpatrol**, but unfortunately, it has been sent to heaven (RIP Scotty, you were the best puppy Y-Y). [Procmon](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon)  depending on the situation, can give you insights into what the malware’s goals are and provide enough data to include in your report. However, static analysis and reverse engineering can help you understand the malware in even greater detail.
+Another way is to dynamically analyze the malware. Every malware has a goal, and achieving that goal requires processing power from the infected machine. You can use [Procmon](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon) from Microsoft itself, to identify suspicious services and processes running on the system (make sure you learn how to use this properly '-'). There **was** also an application called **Winpatrol**, but unfortunately, it has been sent to heaven (RIP Scotty, you were the best puppy Y-Y). [Procmon](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon)  depending on the situation, can give you insights into what the malware’s goals are and provide enough data to include in your report. However, static analysis and reverse engineering can help you understand the malware in even greater detail.
 
 
 
