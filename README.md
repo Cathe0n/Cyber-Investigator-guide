@@ -235,7 +235,7 @@ This event log provides valuable information about system processes and services
     <img src="https://github.com/user-attachments/assets/966e3fdd-0e97-474c-b54a-6503bf0d621c" style="width: 100%; max-width: 1000; max-height: 500;">
 </div>
 
-Time to time, it’s useful to track the uptime of a system or determine when it was turned on or of. This can help narrow your investigation to a specific time window. By searching for a specific application that always starts on boot, you can identify when the machine was powered on. 
+Time to time, it’s useful to track the uptime of a system or determine when it was turned on or off. This can help narrow your investigation to a specific time window. By searching for a specific application that always starts on boot, you can identify when the machine was powered on. 
 One such application is EventLog what a surprise, right? EventLog, along with many other crucial system applications, starts early in the boot process, making it a useful tool for this purpose. Orrr...Another key application to track is Explorer, as it often runs in the background and can help pinpoint system activity during startup or shutdown.
 <br>
 
