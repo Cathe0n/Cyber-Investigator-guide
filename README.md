@@ -86,13 +86,11 @@ In order to keep things simple put bulk_extractor.exe in the same folder as your
 <div align="center">
     <img src="https://github.com/user-attachments/assets/d5ba5026-5b90-4406-bba5-58eab4e15a0c" style="width: 100%; max-width: 1000; max-height: 500;"> 
 </div>
-<br>
 
 <br>
 
 Run  ```./bulk_extractor64.exe -o output .\pagefile.sys```
 
-<br>
 
 <br>
 
@@ -179,7 +177,8 @@ Here's some example of the results from [gKAPE](https://www.kroll.com/en/service
 ### History of launched applications from the system | PcaAppLaunchDic.txt.
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/a4d88224-0d10-482b-a67b-4e4916f03ded" style="width: 100%; max-width: 1000; max-height: 500;">
+    <img src="https://github.com/user-attachments/assets/df83a0c3-b6fb-4ee6-819a-93f3b06974cd" style="width: 100%; max-width: 1000; max-height: 500;">
+
 </div>
 <br>
 
