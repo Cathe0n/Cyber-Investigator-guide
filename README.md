@@ -41,12 +41,16 @@ These questions will help you determine how to proceed. Keep in mind how critica
 
 Whatever you do, **DO NOT** alter the crime scene without proper documentation. If you must process the scene quickly, prioritize live analysis to address the client’s urgency. However, remember that this approach limits the number of artefacts or evidence you can gather compared to a more thorough imaging process (aka static analysis).
 
-## Live analysis. 
+## Live analysis (Acquiring evidence and investigation). 
 Before diving into the investigation and potentially altering evidence, start by using tools like [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) and [Autopsy](https://www.autopsy.com/) or any other artifact collection applications to analyze recent activity. Another excellent option is [FTK Imager](https://www.exterro.com/ftk-product-downloads/ftk-imager-4-7-3-81) , which can also perform memory analysis on a live system. Depending on the situation, [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) may be sufficient, but for a more thorough investigation, using both [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) and [FTK Imager](https://www.exterro.com/ftk-product-downloads/ftk-imager-4-7-3-81) is recommended. 
 
 You should start with memory analysis when performing live analysis, as RAM contains volatile evidence that cannot be replicated. Use [FTK Imager](https://www.exterro.com/ftk-product-downloads/ftk-imager-4-7-3-81)'s built-in memory acquisition feature to capture the memory or [Magnet RAM Capture Memory Acquisition](https://www.magnetforensics.com/resources/magnet-ram-capture/) , and then analyze it using [Volatility](https://github.com/volatilityfoundation/volatility).
-You can use other tools if you prefer, but I personally like using these :3
+You can use other tools if you prefer, but I personally like using these :3 
+<br>
+> [!IMPORTANT]
+> Take pictures! Use your phone or a camera to take photos of the scene AND take pictures/video os what you're doing to the hardware. **_Documentation is key!_** >->
 
+<br>
 
 ### Memory acquisition using FTK Imager.
 <div align="center">
@@ -278,7 +282,61 @@ One such application is EventLog what a surprise, right? EventLog, along with ma
 <br>
 Use the table above to find the information you need for your investigation! You can search for more but these are the ones I find useful ^-^
 
-This is mostly computer forensics, we're going to go web forensics now!
+### Registery analysis
+Registry analysis is a broad topic, but when dealing with malware or anything fishy ;3, the Windows Registry is often affected. It’s important to know what to look for in the registry to uncover any potential malicious activity. >-<
+
+To analyse the registry, you can use tools such as [Registry Explorer](https://ericzimmerman.github.io/#!index.md), which allows you to read the registry files you’ve acquired whether through [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) or by manually extracting them :3
+
+| **System info and accounts**            | **Path**                                                                                                 |
+|-----------------------------------------|------------------------------------------------------------------------------------------------------------------|
+| OS Version                              | `SOFTWARE\Microsoft\Windows NT\CurrentVersion`                                                                  |
+| Current Control Set                     | `HKLM\SYSTEM\CurrentControlSet\SYSTEM\Select\Current SYSTEM\Select\LastKnownGood`                                |
+| Computer Name                           | `SYSTEM\CurrentControlSet\Control\ComputerName\ComputerName`                                                   |
+| Time Zone Information                   | `SYSTEM\CurrentControlSet\Control\TimeZoneInformation`                                                         |
+| Network Interfaces and Past Networks    | `SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces`                                                |
+| Autostart Programs (Autoruns)           | `NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Run`                                                     |
+|                                         | `NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\RunOnce`                                                |
+|                                         | `SOFTWARE\Microsoft\Windows\CurrentVersion\Run`                                                                |
+|                                         | `SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run`                                              |
+|                                         | `SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce`                                                            |
+| SAM Hive and User Information           | `SAM\Domains\Account\Users`                                                                                     |
+
+<br>
+
+| **File/folder usage or knowledge**      | **Path**                                                                                                 |
+|-----------------------------------------|------------------------------------------------------------------------------------------------------------------|
+| Recent Files                            | `NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\RecentDocs`                                                |
+| Office Recent Files                     | `NTUSER.DAT\Software\Microsoft\Office\VERSION`                                                                  |
+|                                         | `NTUSER.DAT\Software\Microsoft\Office\VERSION\UserMRU\LiveID_####\FileMRU`                                      |
+| Shellbags                               | `USRCLASS.DAT\Local Settings\Software\Microsoft\Windows\Shell\Bags`                                            |
+|                                         | `USRCLASS.DAT\Local Settings\Software\Microsoft\Windows\Shell\BagMRU`                                         |
+|                                         | `NTUSER.DAT\Software\Microsoft\Windows\Shell\BagMRU`                                                           |
+|                                         | `NTUSER.DAT\Software\Microsoft\Windows\Shell\Bags`                                                             |
+| Open/Save and LastVisited Dialog MRUs   | `NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSavePIDMRU`                         |
+|                                         | `NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\LastVisitedPIDMRU`                     |
+| Windows Explorer Address/Search Bars    | `NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\TypedPaths`                                      |
+|                                         | `NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\WordWheelQuery`                                 |
+
+<br>
+
+| **External/USB device forensics**       | **Path**                                                                                                 |
+|-----------------------------------------|------------------------------------------------------------------------------------------------------------------|
+| Device Identification                   | `SYSTEM\CurrentControlSet\Enum\USBSTOR`                                                                          |
+|                                         | `SYSTEM\CurrentControlSet\Enum\USB`                                                                              |
+| First/Last Times                        | `SYSTEM\CurrentControlSet\Enum\USBSTOR\Ven_Prod_Version\USBSerial#\Properties`                                   |
+| USB Device Volume Name                  | `SOFTWARE\Microsoft\Windows Portable Devices\Devices`                                                           |
+
+<br>
+
+| **Evidence of execution**               | **Path**                                                                                                 |
+|-----------------------------------------|------------------------------------------------------------------------------------------------------------------|
+| UserAssist                              | `NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{GUID}\Count`                         |
+| ShimCache                               | `SYSTEM\CurrentControlSet\Control\Session Manager\AppCompatCache`                                               |
+| AmCache                                 | `Amcache.hve\Root\File\(Volume GUID\)`                                                                           |
+| BAM/DAM                                  | `SYSTEM\CurrentControlSet\Services\bam\UserSettings\(SID)`                                                      |
+|                                         | `SYSTEM\CurrentControlSet\Services\dam\UserSettings\(SID)`                                                      |
+
+
 
 ## Browser analysis (Live).
 
@@ -413,6 +471,8 @@ Secondly, identify the aftermath of the attack.
   
 Try to identify the goal of this malicious actor. This can give you some sort of an idea of how to continue the investigation.
 <br><br>
+
+
 
 ### Malware Static analysis.
 
