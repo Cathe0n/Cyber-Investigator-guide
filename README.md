@@ -71,6 +71,9 @@ You can use other tools if you prefer, but I personally like using these :3
 
 You can acquire pagefile.sys using [FTK Imager](https://www.exterro.com/ftk-product-downloads/ftk-imager-4-7-3-81) or [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) as well and extract the information using [bulk_extractor](https://github.com/simsong/bulk_extractor) OR read it through a Hex editor like 
 [ImHex](https://github.com/WerWolv/ImHex) !!! ^o^. You can use [Autopsy](https://www.autopsy.com/) to read it as well but using [bulk_extractor](https://github.com/simsong/bulk_extractor) is better imo :3 as it's more conclusive.
+
+> [!NOTE]
+> [bulk_extractor](https://github.com/simsong/bulk_extractor) can also be used to scan whole disk images and individual files or directories!!  >.>
 <br>
 
 <br>
