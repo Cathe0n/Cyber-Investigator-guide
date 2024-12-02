@@ -282,7 +282,7 @@ One such application is EventLog what a surprise, right? EventLog, along with ma
 <br>
 Use the table above to find the information you need for your investigation! You can search for more but these are the ones I find useful ^-^
 
-### Registery analysis
+### Registry analysis
 Registry analysis is a broad topic, but when dealing with malware or anything fishy ;3, the Windows Registry is often affected. It’s important to know what to look for in the registry to uncover any potential malicious activity. >-<
 
 To analyse the registry, you can use tools such as [Registry Explorer](https://ericzimmerman.github.io/#!index.md), which allows you to read the registry files you’ve acquired whether through [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) or by manually extracting them :3
