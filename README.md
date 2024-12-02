@@ -154,7 +154,7 @@ This tool collects Windows event logs, registry hives, and much more. It’s als
 
 ### Recommended way of using gKAPE.
 
-One way of using [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) is selecting _BasicCollection_ and _SANS_Triage_. By choosing these options, you can grab Event logs and Windows registry hives, which are crucial for identifying what happened during the incident. These selections will also help you collect artifacts that can give insight into the system’s behavior, user activity, and potential malicious actions. Both of these modules are great for quickly gathering key data that will be essential in your investigation sooo it's poggers for live analysis. From there, you can analyze the collected data for clues to track down the malicious activity frfr.
+One way of using [gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) is selecting _BasicCollection_ and _SANS_Triage_. By choosing these options, you can grab Event logs and Windows registry hives, which are crucial for identifying what happened during the incident. These selections will also help you collect artifacts that can give insight into the system’s behavior, user activity, and potential malicious actions. Both of these modules are great for quickly gathering key data that will be essential in your investigation sooo it's poggers for live analysis. From there, you can analyze the collected data for clues to track down the malicious activity.
 <br>
 
 <div align="center">
