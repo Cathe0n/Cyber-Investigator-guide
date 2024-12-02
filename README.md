@@ -336,7 +336,38 @@ To analyse the registry, you can use tools such as [Registry Explorer](https://e
 | BAM/DAM                                  | `SYSTEM\CurrentControlSet\Services\bam\UserSettings\(SID)`                                                      |
 |                                         | `SYSTEM\CurrentControlSet\Services\dam\UserSettings\(SID)`                                                      |
 
+<br>
 
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/8f382d3d-7a40-4214-8c0a-d0b11de872a7" style="width: 100%; max-width: 1000; max-height: 500;">
+</div>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/7cdd28c5-7c4d-4b08-aab7-21845f312cca" style="width: 100%; max-width: 1000; max-height: 500;">
+</div>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/e4dfd993-8bfc-41af-8f8a-e94503dca4e7" style="width: 100%; max-width: 1000; max-height: 500;">
+</div>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/3f83e72d-f6cc-4e9c-9e23-adb5d6d616d6" style="width: 100%; max-width: 1000; max-height: 500;">
+</div>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/6a6c56ff-21be-4bf0-923e-2307eb865e1e" style="width: 100%; max-width: 1000; max-height: 500;">
+</div>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/cd5164db-6def-46a1-b118-de5503cbee47" style="width: 100%; max-width: 1000; max-height: 500;">
+</div>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/2fbd5603-4e49-4c55-a6c2-cfbe08b638ac" style="width: 100%; max-width: 1000; max-height: 500;">
+</div>
+
+You must study these registry hives carefully and understand what each category is for. This will make it easier to identify malware and track recent changes. Use the tables I've provided above as a start :3
+<br>
 
 ## Browser analysis (Live).
 
