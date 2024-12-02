@@ -375,6 +375,21 @@ You must study these registry hives carefully and understand what each category 
 
 # Static analysis.
 If you're dealing with a live system when you arrived then **Static analysis** should be a second priority. Static analysis takes a lot of time and depending on the situation, a thorough live analysis of the affected machine should suffice. Anyways, first you need to remove every storage drives in the system since you don't want to deal with RAID systems and missing a HDD and all that so better pay attention >->. You can use your own machine to conduct the imaging process, you can use [TestDisk](https://www.cgsecurity.org/wiki/TestDisk_Download) or [DMDE](https://dmde.com/).  Choose your preferred format, such as .dd or any other that fits your situation.
+<br>
+
+You can use a dedicated imaging rig like the Tableau TX-1 or ATOLA TaskForce. These devices are specifically designed for advanced forensic, used for digital data acquisition.
+<br>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/9d877754-102e-4b91-8bfa-d78f85a7775d" style="width: 100%; max-width: 1000; max-height: 500;">
+</div>
+<br>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/933c49a6-ca04-4c7e-bb0b-976dca4c1c6a" style="width: 100%; max-width: 1000; max-height: 500;">
+</div>
+
+<br>
 
 > [!IMPORTANT]
 > Depending on your hardware data imaging will take AGES!!! '-'
@@ -383,6 +398,10 @@ To do a full imaging of a system can take a long time and if it’s a server you
 
 > [!IMPORTANT]
 > Use **WRITE BLOCKER** I don't care how experienced you are, a **WRITE BLOCKER IS ESSENTIAL** '~'
+
+### Gathering evidence.
+Once you have imaged the storage components 
+
 
 # Incident handling/Response: Phishing.
 
