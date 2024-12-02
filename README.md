@@ -370,11 +370,78 @@ You must study these registry hives carefully and understand what each category 
 <br>
 
 ## Browser analysis (Live).
+[gKAPE](https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape) have the options to collect browser data artifacts as well. BUT the depending on the browser the results may vary, in this part I'll just show [Google Chrome](https://www.google.com/chrome/) and [Firefox](https://www.mozilla.org/en-US/firefox/new/). You can use [Hindsight](https://github.com/obsidianforensics/hindsight) to analyse [Google Chrome](https://www.google.com/chrome/) Web artifacts. Use [Session History Scrounger for Firefox](https://www.jeffersonscher.com/ffu/scrounger.html) for Firefox. You can also get some login information too! :3 
+<br>
+
+### Gkape Chrome and Firefox acquisition.
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/8b4d147b-f0b2-49bd-a834-ce569117c31c" style="width: 100%; max-width: 1000; max-height: 500;">
+</div>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/240c1ac2-dcd2-4c41-a3af-edce77f08c56" style="width: 100%; max-width: 1000; max-height: 500;">
+
+</div>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/ebdbacc6-9ab6-4914-8b82-8661acb3c72b" style="width: 100%; max-width: 1000; max-height: 500;">
+</div>
+<br>
+
+### Analysing Firefox Artifacts using Session History Scrounger for Firefox.
+
+You can use [Session History Scrounger for Firefox](https://www.jeffersonscher.com/ffu/scrounger.html) to view ```baklz4``` and ```jsonlz4``` files, this format is used to store session history for [Firefox](https://www.mozilla.org/en-US/firefox/new/).
 
 
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/bd34ee23-6809-437d-9ede-df34fdfb281f" style="width: 100%; max-width: 1000; max-height: 500;">
+
+</div>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/71211ecd-2285-41bf-9623-deb8e467ca13" style="width: 100%; max-width: 1000; max-height: 500;">
+</div>
+
+### Analysing Google Chrome with Hindsight.
+
+[Hindsight](https://github.com/obsidianforensics/hindsight) use this tool to analyse [Google Chrome](https://www.google.com/chrome/) artifacts.
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/ba97a83f-e077-443d-9231-6edf29ad7322" style="width: 100%; max-width: 1000; max-height: 500;">
+
+</div>
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/6b763222-5884-482a-97dc-b4f5de8487d6" style="width: 100%; max-width: 1000; max-height: 500;"> 
+</div>
+
+<br>
+
+### Login information. (This is a little dangerous as it may tamper with evidence, I suggest using this for Static analysis! >->)
+This is where we might rely on our infamous counterpart to handle the tricky tasks essentially acquiring someone's login information. Please ensure this is done lawfully and only when absolutely necessary! '-'. Using [HackBrowserData](https://github.com/moonD4rk/HackBrowserData) you can acquire the user's Login information and History in seconds. I suggest you do this last because it may tamper with evidence due to how the scripts works thus I recommend to do this in the **Static analysis** phase! 
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/64256ba6-f284-4ba0-a58e-b44607c5e882" style="width: 100%; max-width: 1000; max-height: 500;"> 
+
+</div>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/c239d3a7-6c5b-496c-a12e-0cc572ca1457" style="width: 100%; max-width: 1000; max-height: 500;"> 
+
+</div>
+<br>
+
+>[!IMPORTANT]
+> Remember your goal here! DO NOT DO ANYTHING UNNECESSARY TO THE INVESTIGATION! >->
+
+<br>
+<br>
 
 # Static analysis.
 If you're dealing with a live system when you arrived then **Static analysis** should be a second priority. Static analysis takes a lot of time and depending on the situation, a thorough live analysis of the affected machine should suffice. Anyways, first you need to remove every storage drives in the system since you don't want to deal with RAID systems and missing a HDD and all that so better pay attention >->. You can use your own machine to conduct the imaging process, you can use [TestDisk](https://www.cgsecurity.org/wiki/TestDisk_Download) or [DMDE](https://dmde.com/).  Choose your preferred format, such as .dd or any other that fits your situation.
+
+> [!IMPORTANT]
+>  Do keep in mind, if the system uses [Bitlocker](https://support.microsoft.com/en-us/windows/bitlocker-overview-44c0c61c-989d-4a69-8822-b95cd49b1bbf) you'll need to unlock it first! Soooo better ask for the password '-'
+
+
 <br>
 
 You can use a dedicated imaging rig like the Tableau TX-1 or ATOLA TaskForce. These devices are specifically designed for advanced forensic, used for digital data acquisition.
@@ -400,8 +467,19 @@ To do a full imaging of a system can take a long time and if it’s a server you
 > Use **WRITE BLOCKER** I don't care how experienced you are, a **WRITE BLOCKER IS ESSENTIAL** '~'
 
 ### Gathering evidence.
-Once you have imaged the storage components 
+Once you have imaged the storage components, you can use [Autopsy](https://www.autopsy.com/) to open your image file. **[Autopsy](https://www.autopsy.com/)** it is an open-source digital forensics platform. It supports analysing disk images, recovering deleted files, and identifying artefacts like browser history, emails, user activity, and registry changes. [Autopsy](https://www.autopsy.com/) provides tools for timeline analysis, keyword searches, and automated parsing of common file formats. The parsing process may take some time and is generally the longest part of the procedure sooo better make some tea :3. 
+<br>
 
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/61f51b3d-4076-4a82-ab42-52b1a43bff82" style="width: 100%; max-width: 1000; max-height: 500;">
+</div>
+
+You can navigate easily using [Autopsy](https://www.autopsy.com/) and if there's no bad sectors or corrupted/encrypted files, you should see evverything that is stored in the device. Depending on your case it's difficult to fit everything in this one guide so I'll cut it down a little! 
+
+If you're looking for a specific application the navigating to ```C:\Windows\Prefetch``` or ```C:\Program Files\```. In a case like this, researching the application further and finding the location of said application is easy enough...Hopefully >-<
+You can navigate to ```System32``` to locate all logs and event logs for analysis, if needed. Pretty much, the key is to define your goal once you have a clear objective, the process becomes much smoother!. Just remember to stay patient :3
+
+<br>
 
 # Incident handling/Response: Phishing.
 
