@@ -16,9 +16,54 @@ Cyber Investigator Experimental Detachment
 [![Issues - Cyber-Investigator-guide](https://img.shields.io/github/issues/Cathe0n/Cyber-Investigator-guide?label=Issues)](https://github.com/Cathe0n/Cyber-Investigator-guide/issues)
 
 
-# Table of contents.
+# Table of Contents
 
-- [Usage](#usage)
+<details>
+  <summary>Incident Handling/Response</summary>
+  
+  - [State of the Crime Scene](https://github.com/Cathe0n/Cyber-Investigator-guide/edit/Computer-Forensic/README.md#incident-handlingresponse)
+    - [Live Analysis (Acquiring Evidence and Investigation)](#live-analysis-acquiring-evidence-and-investigation)
+      - [Memory Acquisition Using FTK Imager](#memory-acquisition-using-ftk-imager)
+      - [`pagefile.sys` Analysis](#pagefilesys-analysis)
+    - [gKAPE](#gkape)
+      - [Recommended Way of Using gKAPE](#recommended-way-of-using-gkape)
+      - [History of Launched Applications (`PcaAppLaunchDic.txt`)](#history-of-launched-applications-pcaapplaunchdictxt)
+      - [Background Application Processes (`PcaGeneralDb0.txt`)](#background-application-processes-pcageneraldb0txt)
+      - [Windows Defender Log (`MPLog-69420.log`)](#windows-defender-log-mplog-69420log)
+    
+    - [Event Log Analysis](#event-log-analysis)
+      - [Security Logs (`Security.evtx`)](#security-logs-securityevtx)
+      - [System Logs (`System.evtx`)](#system-logs-systemevtx)
+      - [Registry Analysis](#registry-analysis)
+    - [Browser Analysis (Live)](#browser-analysis-live)
+      - [gKAPE Chrome and Firefox Acquisition](#gkape-chrome-and-firefox-acquisition)
+      - [Analyzing Firefox with Session History Scrounger](#analyzing-firefox-with-session-history-scrounger)
+      - [Analyzing Google Chrome with Hindsight](#analyzing-google-chrome-with-hindsight)
+      - [Login Information](#login-information)
+  - [Static Analysis](#static-analysis)
+    - [Gathering Evidence](#gathering-evidence)
+</details>
+
+<details>
+  <summary>Incident Handling/Response: Phishing</summary>
+  
+  - [Email Phishing Campaign Scenario](#email-phishing-campaign-scenario)
+</details>
+
+<details>
+  <summary>Malware Analysis</summary>
+  
+  - [Malware Static Analysis](#malware-static-analysis)
+  - [Malware Dynamic Analysis](#malware-dynamic-analysis)
+</details>
+
+<details>
+  <summary>Post-Incident/Recovery Phase</summary>
+  
+  - [Recovery Phase Details](#post-incidentrecovery-phase)
+</details>
+
+
 
 
 # State of the crime scene.
@@ -615,7 +660,7 @@ For Linux systems you can use [REMnux](https://docs.remnux.org/) this has everyt
 
 <br><br>
 ### Malware Dynamic Analysis.
-Another way is to dynamically analyze the malware. Every malware has a goal, and achieving that goal requires processing power from the infected machine. You can use [Procmon](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon) from Microsoft itself, to identify suspicious services and processes running on the system (make sure you learn how to use this properly '-'). There **was** also an application called **Winpatrol**, but unfortunately, it has been sent to heaven (RIP Scotty, you were the best puppy Y-Y). [Procmon](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon)  depending on the situation, can give you insights into what the malware’s goals are and provide enough data to include in your report. However, static analysis and reverse engineering can help you understand the malware in even greater detail.
+Another way is to dynamically analyze the malware. Every malware has a goal, and achieving that goal requires processing power from the infected machine. You can use [Procmon](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon) from Microsoft itself, to identify suspicious services and processes running on the system (make sure you learn how to use this properly '-'). There **was** also an application called **Winpatrol**, but unfortunately, it has been sent to heaven (RIP Scotty, you were the best puppy Y-Y). [Procmon](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon)  depending on the situation, can give you insights into what the malware’s goals are and provide enough data to include in your report. However, static analysis and reverse engineering can help you understand the malware in even greater detail. Another fantastic tool to consider is [App any run](https://app.any.run/). This cloud-based sandbox is designed specifically for analysing malware and phishing links. By running the malware in a controlled virtual environment, it provides detailed insights into what the malware is attempting to do. It’s incredibly fast, intuitive to use, and an excellent choice for quick analysis. Whether you’re dealing with suspicious attachments or phishy links, this tool can save a lot of time while ensuring you stay safe during the investigation process! ^-^
 <br>
 
 <div align="center">
@@ -623,4 +668,18 @@ Another way is to dynamically analyze the malware. Every malware has a goal, and
 </div>
 
 <br>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/08c79498-8244-490a-ac3c-d245ead1c25f" style="width: 100%; max-width: 1000; max-height: 500;">
+</div>
+
+<br>
+
 Keep in mind you have to slowly comb all processes in [Procmon](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon) and if the malware is sneaky they can and might go dormant to avoid detection. This is where things get dicey. New malware is constantly being developed, and attackers are always evolving their methods. You’re playing their game now, so it’s crucial to stay vigilant and closely monitor the situation.
+
+
+# Post-Incident | Recovery phase.
+
+
+
+
