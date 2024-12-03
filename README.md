@@ -36,7 +36,8 @@ Cyber Investigator Experimental Detachment
       - [Microsoft-Windows-Windows Defender%4Operational.evtx](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#microsoft-windows-windows-defender4operationalevtx)
       - [Security.evtx](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#securityevtx)
       - [System.evtx](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#systemevtx)
-      - [Registry Analysis](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#registry-analysis)
+    - [Registry Analysis](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#registry-analysis)
+        
     - [Browser Analysis (Live)](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#browser-analysis-live)
       - [gKAPE Chrome and Firefox Data Acquisition](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#gkape-chrome-and-firefox-acquisition)
       - [Analyzing Firefox Artifacts Using Session History Scrounger](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#analysing-firefox-artifacts-using-session-history-scrounger-for-firefox)
