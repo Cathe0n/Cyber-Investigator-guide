@@ -474,10 +474,13 @@ Once you have imaged the storage components, you can use [Autopsy](https://www.a
     <img src="https://github.com/user-attachments/assets/61f51b3d-4076-4a82-ab42-52b1a43bff82" style="width: 100%; max-width: 1000; max-height: 500;">
 </div>
 
-You can navigate easily using [Autopsy](https://www.autopsy.com/) and if there's no bad sectors or corrupted/encrypted files, you should see evverything that is stored in the device. Depending on your case it's difficult to fit everything in this one guide so I'll cut it down a little! 
+You can navigate easily using [Autopsy](https://www.autopsy.com/) and if there's no bad sectors or corrupted/encrypted files, you should see everythingggg >-> that is stored in the device. Depending on your case it's difficult to fit everything in this one guide so I'll cut it down a little! 
 
 If you're looking for a specific application the navigating to ```C:\Windows\Prefetch``` or ```C:\Program Files\```. In a case like this, researching the application further and finding the location of said application is easy enough...Hopefully >-<
-You can navigate to ```System32``` to locate all logs and event logs for analysis, if needed. Pretty much, the key is to define your goal once you have a clear objective, the process becomes much smoother!. Just remember to stay patient :3
+You can navigate to ```System32``` to locate all logs and event logs for analysis, if needed. Pretty much, the key is to define your goal once you have a clear objective, the process becomes much smoother!. Just remember to be patient :3
+
+>[!NOTE]
+> Static Analysis are somewhat similar to Live analysis, is just that you're not working directly with the evidence which reduces the likihood of evidence tampering! 
 
 <br>
 
