@@ -10,6 +10,9 @@ Cyber Investigator Experimental Detachment
 
 # Incident handling/response.
 
+<br>
+
+# Table of contents.   _Hope this helps!_ ^~^
 
 [![Guide Version](https://img.shields.io/github/tag/Cathe0n/Cyber-Investigator-guide?include_prereleases=&sort=semver&color=purple&label=Guide%20Version)](https://github.com/Cathe0n/Cyber-Investigator-guide/releases/)
 [![License](https://img.shields.io/badge/License-Public_Safety_Institution_-purple)](#license)
@@ -42,20 +45,24 @@ Cyber Investigator Experimental Detachment
 </details>
 
 <details>
-  <summary>Static Analysis</summary>
+  <summary>Static Analysis | Investigation </summary>
     
-  - [Gathering Evidence](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#gathering-evidence)
+ - [Static Analysis](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#static-analysis) 
+      - [Gathering Evidence](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#gathering-evidence)
 </details>
 
 <details>
   <summary>Incident Handling/Response: Phishing</summary>
+    
   - [Email Phishing Campaign Scenario](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#email-phishing-campaign-scenario)
 </details>
 
 <details>
-  <summary>Malware Analysis! (This is Big Brain Time d(>_< ) )</summary>
-  - [Malware Static Analysis](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#malware-static-analysis)
-  - [Malware Dynamic Analysis](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#malware-dynamic-analysis)
+  <summary>Malware Analysis! (This is Big Brain Time d(>_< ) ) </summary>
+      
+- [Malware Analysis!]([https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#static-analysis](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#malware-analysis-this-is-big-brain-time-d_--))      
+     - [Malware Static Analysis](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#malware-static-analysis)
+      - [Malware Dynamic Analysis](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#malware-dynamic-analysis)
 </details>
 
 <details>
