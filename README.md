@@ -518,7 +518,7 @@ To do a full imaging of a system can take a long time and if it’s a server you
 > Use **WRITE BLOCKER** I don't care how experienced you are, a **WRITE BLOCKER IS ESSENTIAL** '~'
 
 ### Gathering evidence.
-Once you have imaged the storage components, you can use [Autopsy](https://www.autopsy.com/) to open your image file. **[Autopsy](https://www.autopsy.com/)** it is an open-source digital forensics platform. It supports analysing disk images, recovering deleted files, and identifying artefacts like browser history, emails, user activity, and registry changes. [Autopsy](https://www.autopsy.com/) provides tools for timeline analysis, keyword searches, and automated parsing of common file formats. The parsing process may take some time and is generally the longest part of the procedure sooo better make some tea :3. 
+Once you have imaged the storage components, you can use [Autopsy](https://www.autopsy.com/) to open your image file. **[Autopsy](https://www.autopsy.com/)** it is an open-source digital forensics platform. It supports analysing disk images, recovering deleted files, and identifying artefacts like browser history, emails, user activity, and registry changes. [Autopsy](https://www.autopsy.com/) provides tools for timeline analysis, keyword searches, and automated parsing of common file formats. The parsing process may take some time and it's generally the longest part of the procedure sooo better make some tea :3. 
 <br>
 
 <div align="center">
