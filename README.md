@@ -480,7 +480,7 @@ If you're looking for a specific application the navigating to ```C:\Windows\Pre
 You can navigate to ```System32``` to locate all logs and event logs for analysis, if needed. Pretty much, the key is to define your goal once you have a clear objective, the process becomes much smoother!. Just remember to be patient :3
 
 >[!NOTE]
-> Static Analysis are somewhat similar to Live analysis, is just that you're not working directly with the evidence which reduces the likihood of evidence tampering! 
+> Static Analysis are somewhat similar to Live analysis, is just that you're not working directly with the evidence which reduces the liklihood of evidence tampering! 
 
 <br>
 
@@ -608,7 +608,7 @@ Try to identify the goal of this malicious actor. This can give you some sort of
 ### Malware Static analysis.
 
 **Windows systems**
-This part is going to be a bit tricky. If the system is known to be infected and YOU have already isolated it from the network, you can perform a full system imaging and analyze the malware safely using the copied image. This is called static analysis, and it’s the safest way to analyze a system. If you’re going this route, you can use tools like  [IDA](https://hex-rays.com/ida-pro), [PE-Explorer](https://www.pe-explorer.com/) and [OllyDbg](https://www.ollydbg.de/download.htm).Yeah, this is reverse engineering area WHICH will not be fully covered in this guide. (I don't think you're going to analyse this deep in most cases! ^-^). 
+This part is going to be a bit tricky. If the system is known to be infected and YOU have already isolated it from the network, you can perform a full system imaging and analyze the malware safely using the copied image. This is called static analysis, and it’s the safest way to analyze a system. If you’re going this route, you can use tools like  [IDA](https://hex-rays.com/ida-pro), [PE-Explorer](https://www.pe-explorer.com/) and [OllyDbg](https://www.ollydbg.de/download.htm). Yeah, this is reverse engineering area WHICH will not be fully covered in this guide. (I don't think you're going to analyse this deep in some cases! ^-^). 
 
 **Linux systems.**
 For Linux systems you can use [REMnux](https://docs.remnux.org/) this has everything you need to analyse malware in Linux systems.
@@ -616,11 +616,11 @@ For Linux systems you can use [REMnux](https://docs.remnux.org/) this has everyt
 <br><br>
 ### Malware Dynamic Analysis.
 Another way is to dynamically analyze the malware. Every malware has a goal, and achieving that goal requires processing power from the infected machine. You can use [Procmon](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon) from Microsoft itself, to identify suspicious services and processes running on the system (make sure you learn how to use this properly '-'). There **was** also an application called **Winpatrol**, but unfortunately, it has been sent to heaven (RIP Scotty, you were the best puppy Y-Y). [Procmon](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon)  depending on the situation, can give you insights into what the malware’s goals are and provide enough data to include in your report. However, static analysis and reverse engineering can help you understand the malware in even greater detail.
+<br>
 
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/9e03c33a-42df-4c5a-aa38-da741f43289c" style="width: 100%; max-width: 1000; max-height: 500;">
+</div>
 
-
-
-
-
-
-
+<br>
+Keep in mind you have to slowly comb all processes in [Procmon](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon) and if the malware is sneaky they can and might go dormant to avoid detection. This is where things get dicey. New malware is constantly being developed, and attackers are always evolving their methods. You’re playing their game now, so it’s crucial to stay vigilant and closely monitor the situation.
