@@ -638,7 +638,7 @@ Now, this is technically a post incident. You need to analyse what that malware 
 
 # Malware analysis! (This is big brain time d(>_< ) ).
 
-I’m going to be honest,  this is where things are complicated and time consuming. Malware analysis is a WHOLE nother topic and I will make another guide for it soon bare with me!! >-<. 
+I’m going to be honest,  this is where things are complicated and time consuming. Malware analysis is a WHOLE nother topic and I will make another guide for it soon bear with me!! >-<. 
 
 First, identify **HOW** the malware breached the systems.
 
