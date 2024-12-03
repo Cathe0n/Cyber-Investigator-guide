@@ -16,51 +16,50 @@ Cyber Investigator Experimental Detachment
 [![Issues - Cyber-Investigator-guide](https://img.shields.io/github/issues/Cathe0n/Cyber-Investigator-guide?label=Issues)](https://github.com/Cathe0n/Cyber-Investigator-guide/issues)
 
 
-# Table of Contents
+<details>
+  <summary>Live Analysis</summary>
+    
+  - [_1_**State of the Crime Scene **](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#state-of-the-crime-scene)
+    - [Live Analysis (Acquiring Evidence and Investigation)](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#live-analysis-acquiring-evidence-and-investigation)
+      - [Memory Acquisition Using FTK Imager](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#memory-acquisition-using-ftk-imager)
+      - [Using Volatility](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#using-volatility)
+      - [`pagefile.sys` Analysis](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#pagefilesys-analysis)
+    - [gKAPE](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#gkape)
+      - [Recommended Way of Using gKAPE](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#recommended-way-of-using-gkape)
+      - [History of Launched Applications (`PcaAppLaunchDic.txt`)](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#history-of-launched-applications-from-the-system--pcaapplaunchdictxt)
+      - [Background Application Processes (`PcaGeneralDb0.txt`)](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#background-application-processes-log--pcageneraldb0txt)
+      - [Windows Defender Log (`MPLog-69420.log`)](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#windows-defender-log--mplog-69420log-i-know-its-microsoft-defender--)
+    - [Event Log Analysis (sorta >->)](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#event-log-analysis-sorta--)
+      - [Microsoft-Windows-Windows Defender%4Operational.evtx](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#microsoft-windows-windows-defender4operationalevtx)
+      - [Security.evtx](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#securityevtx)
+      - [System.evtx](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#systemevtx)
+      - [Registry Analysis](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#registry-analysis)
+    - [Browser Analysis (Live)](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#browser-analysis-live)
+      - [gKAPE Chrome and Firefox Data Acquisition](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#gkape-chrome-and-firefox-acquisition)
+      - [Analyzing Firefox Artifacts Using Session History Scrounger](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#analysing-firefox-artifacts-using-session-history-scrounger-for-firefox)
+      - [Analyzing Google Chrome with Hindsight](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#analysing-google-chrome-with-hindsight)
+      - [Login Information (Caution)](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#login-information-this-is-a-little-dangerous-as-it-may-tamper-with-evidence-i-suggest-using-this-in-static-analysis-phase--)
+</details>
 
 <details>
-  <summary>Incident Handling/Response</summary>
-  
-  - [State of the Crime Scene](https://github.com/Cathe0n/Cyber-Investigator-guide/edit/Computer-Forensic/README.md#incident-handlingresponse)
-    - [Live Analysis (Acquiring Evidence and Investigation)](#live-analysis-acquiring-evidence-and-investigation)
-      - [Memory Acquisition Using FTK Imager](#memory-acquisition-using-ftk-imager)
-      - [`pagefile.sys` Analysis](#pagefilesys-analysis)
-    - [gKAPE](#gkape)
-      - [Recommended Way of Using gKAPE](#recommended-way-of-using-gkape)
-      - [History of Launched Applications (`PcaAppLaunchDic.txt`)](#history-of-launched-applications-pcaapplaunchdictxt)
-      - [Background Application Processes (`PcaGeneralDb0.txt`)](#background-application-processes-pcageneraldb0txt)
-      - [Windows Defender Log (`MPLog-69420.log`)](#windows-defender-log-mplog-69420log)
+  <summary>Static Analysis</summary>
     
-    - [Event Log Analysis](#event-log-analysis)
-      - [Security Logs (`Security.evtx`)](#security-logs-securityevtx)
-      - [System Logs (`System.evtx`)](#system-logs-systemevtx)
-      - [Registry Analysis](#registry-analysis)
-    - [Browser Analysis (Live)](#browser-analysis-live)
-      - [gKAPE Chrome and Firefox Acquisition](#gkape-chrome-and-firefox-acquisition)
-      - [Analyzing Firefox with Session History Scrounger](#analyzing-firefox-with-session-history-scrounger)
-      - [Analyzing Google Chrome with Hindsight](#analyzing-google-chrome-with-hindsight)
-      - [Login Information](#login-information)
-  - [Static Analysis](#static-analysis)
-    - [Gathering Evidence](#gathering-evidence)
+  - [Gathering Evidence](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#gathering-evidence)
 </details>
 
 <details>
   <summary>Incident Handling/Response: Phishing</summary>
-  
-  - [Email Phishing Campaign Scenario](#email-phishing-campaign-scenario)
+  - [Email Phishing Campaign Scenario](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#email-phishing-campaign-scenario)
 </details>
 
 <details>
-  <summary>Malware Analysis</summary>
-  
-  - [Malware Static Analysis](#malware-static-analysis)
-  - [Malware Dynamic Analysis](#malware-dynamic-analysis)
+  <summary>Malware Analysis! (This is Big Brain Time d(>_< ) )</summary>
+  - [Malware Static Analysis](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#malware-static-analysis)
+  - [Malware Dynamic Analysis](https://github.com/Cathe0n/Cyber-Investigator-guide?tab=readme-ov-file#malware-dynamic-analysis)
 </details>
 
 <details>
-  <summary>Post-Incident/Recovery Phase</summary>
-  
-  - [Recovery Phase Details](#post-incidentrecovery-phase)
+  <summary>Post-Incident | Recovery Phase</summary>
 </details>
 
 
