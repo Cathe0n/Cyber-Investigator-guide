@@ -416,7 +416,7 @@ You can use [Session History Scrounger for Firefox](https://www.jeffersonscher.c
 
 <br>
 
-### Login information. (This is a little dangerous as it may tamper with evidence, I suggest using this for Static analysis! >->)
+### Login information. (This is a little dangerous as it may tamper with evidence, I suggest using this in Static analysis phase! >->)
 This is where we might rely on our infamous counterpart to handle the tricky tasks essentially acquiring someone's login information. Please ensure this is done lawfully and only when absolutely necessary! '-'. Using [HackBrowserData](https://github.com/moonD4rk/HackBrowserData) you can acquire the user's Login information and History in seconds. I suggest you do this last because it may tamper with evidence due to how the scripts works thus I recommend to do this in the **Static analysis** phase! 
 <div align="center">
     <img src="https://github.com/user-attachments/assets/64256ba6-f284-4ba0-a58e-b44607c5e882" style="width: 100%; max-width: 1000; max-height: 500;"> 
