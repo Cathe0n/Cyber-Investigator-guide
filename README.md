@@ -688,7 +688,18 @@ Keep in mind you have to slowly comb all processes in [Procmon](https://learn.mi
 
 
 # Post-Incident | Recovery phase.
+Well, you've made it to Recovery phase. Now, you can begin recovering the system AFTER addressing and patching all identified vulnerabilities. The recovery process will vary depending on the situation. For instance:
 
+- Human error, which is a common culprit. Some clients may even request that you conduct training sessions, so be prepared with a good presentation.
+- Network/Server misconfigurations or any misconfiguration are typically straightforward, just reconfigure it '-'. Employees should be made aware of the error too.
+- Zero-day application-based malware may necessitate temporarily disabling the affected application and promptly reporting the issue to the vendor.
+
+
+In cases involving legal implications, if a suspect has been arrested, you will need to submit a thorough report to the authorities. For significant cases, you might also be required to testify in court. It’s crucial to be well-prepared for this stage, as the post-incident process can become complex once legal authorities are involved.
+
+After completing everything, it’s time to pack up and head back to base. Make sure that a copy of your report is uploaded to your reports databse. Once done, you can call it a day and made some tea! :3
+
+**Congratulations you've solve your case! I hope this guide has been useful and make sure to check out other guides such as (Mobile-Forensic)[https://github.com/Cathe0n/Cyber-Investigator-guide/blob/Mobile-Forensic/README.md#cyber-investigator-guide--mobile-forensics] and many more in the ```Branch``` section**
 
 
 
