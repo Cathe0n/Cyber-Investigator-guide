@@ -68,6 +68,9 @@ Cyber Investigator Experimental Detachment
 
 <details>
   <summary>Post-Incident | Recovery Phase</summary>
+    
+   [Post-Incident | Recovery Phase](https://github.com/Cathe0n/Cyber-Investigator-guide/blob/Computer-Forensic/README.md#post-incident--recovery-phase)
+   
 </details>
 
 
@@ -698,6 +701,8 @@ Well, you've made it to Recovery phase. Now, you can begin recovering the system
 In cases involving legal implications, if a suspect has been arrested, you will need to submit a thorough report to the authorities. For significant cases, you might also be required to testify in court. It’s crucial to be well-prepared for this stage, as the post-incident process can become complex once legal authorities are involved.
 
 After completing everything, it’s time to pack up and head back to base. Make sure that a copy of your report is uploaded to your reports databse. Once done, you can call it a day and made some tea! :3
+<br>
+<br>
 
 **Congratulations you've solve your case! I hope this guide has been useful and make sure to check out other guides such as [Mobile-Forensic](https://github.com/Cathe0n/Cyber-Investigator-guide/blob/Mobile-Forensic/README.md#cyber-investigator-guide--mobile-forensics) and many more in the ```Branch``` section**
 
