@@ -704,9 +704,9 @@ After completing everything, it’s time to pack up and head back to base. Make 
 <br>
 <br>
 
-**Congratulations you've solved your case! I hope this guide has been useful and make sure to check out other guides such as [Mobile-Forensic](https://github.com/Cathe0n/Cyber-Investigator-guide/blob/Mobile-Forensic/README.md#cyber-investigator-guide--mobile-forensics) and many more in the ```Branch``` section.
+**Congratulations you've solved your case! I hope this guide has been useful and make sure to check out other guides such as [Mobile-Forensic](https://github.com/Cathe0n/Cyber-Investigator-guide/blob/Mobile-Forensic/README.md#cyber-investigator-guide--mobile-forensics) and many more in the ```Branch``` section.**
   
-  Thank You!! :3** 
+  **Thank You!! :3**
 
 
 
