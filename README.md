@@ -699,7 +699,7 @@ In cases involving legal implications, if a suspect has been arrested, you will 
 
 After completing everything, it’s time to pack up and head back to base. Make sure that a copy of your report is uploaded to your reports databse. Once done, you can call it a day and made some tea! :3
 
-**Congratulations you've solve your case! I hope this guide has been useful and make sure to check out other guides such as (Mobile-Forensic)[https://github.com/Cathe0n/Cyber-Investigator-guide/blob/Mobile-Forensic/README.md#cyber-investigator-guide--mobile-forensics] and many more in the ```Branch``` section**
+**Congratulations you've solve your case! I hope this guide has been useful and make sure to check out other guides such as [Mobile-Forensic](https://github.com/Cathe0n/Cyber-Investigator-guide/blob/Mobile-Forensic/README.md#cyber-investigator-guide--mobile-forensics) and many more in the ```Branch``` section**
 
 
 
