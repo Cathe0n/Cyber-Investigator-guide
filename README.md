@@ -114,35 +114,66 @@ MD-NEXT is a powerful forensic tool designed for comprehensive mobile device ana
 </div>
 
 <div align="center">
-    <img src="" style="width: 100%; max-width: 1000; max-height: 500;">
+    <img src="https://github.com/user-attachments/assets/04fedd1f-2091-4d0f-b4b9-86a92331412b" style="width: 100%; max-width: 1000; max-height: 500;">
 
 </div>
+
+<br>
+
+# MD-RED extraction result analysis.
+I usually use MD-RED ad MD-Explorer to analyse the results. You can see almost everything, including WhatsApp, Discord and whatever messaging app that is installed in the phone. Now, some deleted messages will not be available unfortunately so be mindful! >->
+
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/8a15a6fc-09e0-4d3c-abe9-5a7a42d67bd1" style="width: 100%; max-width: 1000; max-height: 500;">
+
+</div>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/150f443f-df30-475f-84e9-fdecafa77903" style="width: 100%; max-width: 1000; max-height: 500;">
+
+</div>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/29768eba-03b5-4950-ae6e-2aa9a05b0b6f" style="width: 100%; max-width: 1000; max-height: 500;">
+
+</div>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/53f3082e-886c-4273-b64a-c0bb385de947" style="width: 100%; max-width: 1000; max-height: 500;">
+
+</div>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/bb124add-4aaf-494a-b6ca-5ace84af78f9" style="width: 100%; max-width: 1000; max-height: 500;">
+
+</div>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/6efa8967-9df7-46df-9f07-bf76d693fb11" style="width: 100%; max-width: 1000; max-height: 500;">
+
+</div>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/8cb0c69b-6476-4439-af70-f21190c40eac)" style="width: 100%; max-width: 1000; max-height: 500;">
+
+</div>
+
+<br>
+
+# Downgrade application for more thorough analysis.
+In certain cases, newer application patches may prevent Cellebrite or MD-Next from conducting a full analysis. To address this, these tools often provide an option to downgrade the application to a version compatible with thorough analysis. However, **Becareful!** >->. Downgrading an application can potentially lead to data loss or corruption. For example, WhatsApp messages might disappear, or errors could occur when attempting to restore the app to its latest version after analysis. Always weigh the risks and document to avoid complications.
+
+
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/72f4c79d-8d61-4c36-a430-99302f1e83c0" style="width: 100%; max-width: 1000; max-height: 500;">
+
+</div>
+
 <div align="center">
     <img src="" style="width: 100%; max-width: 1000; max-height: 500;">
 
 </div>
-<div align="center">
-    <img src="" style="width: 100%; max-width: 1000; max-height: 500;">
-
-</div>
 
 
-![MD-NEXT_TJhuM599HY]()
-![MD-NEXT_CTY2pjiud6](https://github.com/user-attachments/assets/24f1b1c7-8f6a-4b1f-8384-40efad7491be)
-![MD-NEXT_BgtFnKGy0n](https://github.com/user-attachments/assets/04fedd1f-2091-4d0f-b4b9-86a92331412b)
-![explorer_wQeDpUJRlV](https://github.com/user-attachments/assets/8a15a6fc-09e0-4d3c-abe9-5a7a42d67bd1)
-![MD-NEXT_aaHz8IKjHB](https://github.com/user-attachments/assets/30902c46-a99d-4d09-9c88-d6ff57e354d2)
-![MD-NEXT_UbuU5rz7Jw](https://github.com/user-attachments/assets/7fdc507c-92b5-476d-9747-1083c61e0059)
-![MD-RED_jU0AUVHXJi](https://github.com/user-attachments/assets/150f443f-df30-475f-84e9-fdecafa77903)
-![MD-RED_2kgnZKftIa](https://github.com/user-attachments/assets/29768eba-03b5-4950-ae6e-2aa9a05b0b6f)
-![MD-RED_fcreoxa2Bi](https://github.com/user-attachments/assets/53f3082e-886c-4273-b64a-c0bb385de947)
-![HashVerification_eJPv3nsJ7n](https://github.com/user-attachments/assets/bb124add-4aaf-494a-b6ca-5ace84af78f9)
-![MD-NEXT_5VxW60y24m](https://github.com/user-attachments/assets/2a46415b-71ef-4527-9072-fea783c564cd)
-![MD-NEXT_NsqXtqfEqX](https://github.com/user-attachments/assets/9ac6a0a2-99aa-4919-82eb-233f62ad05cf)
-![MD-NEXT_aDealLfesT](https://github.com/user-attachments/assets/596d9009-4113-4d3f-83b8-c9513edc0933)
-![MD-NEXT_s90Qx2gJK4](https://github.com/user-attachments/assets/e2489a24-b42c-4587-9ed9-68a0820f442d)
-![MD-NEXT_9qyaUhC5M1](https://github.com/user-attachments/assets/3dbe707e-26f3-4519-89c1-223cd9717107)
-![MD-NEXT_wLThZDRP0i](https://github.com/user-attachments/assets/e4a087e8-aca3-47ab-a32a-fb03026da3ef)
-![MD-NEXT_QjbQZbBtH1](https://github.com/user-attachments/assets/72f4c79d-8d61-4c36-a430-99302f1e83c0)
-![MD-Explorer_vIcYuMlpTU](https://github.com/user-attachments/assets/6efa8967-9df7-46df-9f07-bf76d693fb11)
-![MD-Explorer_LXOa7mOVb1](https://github.com/user-attachments/assets/8cb0c69b-6476-4439-af70-f21190c40eac)
