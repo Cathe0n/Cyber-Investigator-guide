@@ -164,16 +164,20 @@ I usually use MD-RED ad MD-Explorer to analyse the results. You can see almost e
 # Downgrade application for more thorough analysis.
 In certain cases, newer application patches may prevent Cellebrite or MD-Next from conducting a full analysis. To address this, these tools often provide an option to downgrade the application to a version compatible with thorough analysis. However, **Becareful!** >->. Downgrading an application can potentially lead to data loss or corruption. For example, WhatsApp messages might disappear, or errors could occur when attempting to restore the app to its latest version after analysis. Always weigh the risks and document to avoid complications.
 
-
+<br>
 
 <div align="center">
     <img src="https://github.com/user-attachments/assets/72f4c79d-8d61-4c36-a430-99302f1e83c0" style="width: 100%; max-width: 1000; max-height: 500;">
 
 </div>
 
-<div align="center">
-    <img src="" style="width: 100%; max-width: 1000; max-height: 500;">
+<br>
 
-</div>
+# Final words.
 
+I understand this guide is short af, mobile phone forensic is a complex and expansive subject. I plan to update this guide with more open-source tools and techniques when I have the time to compile and write them down. Currently, this guide focuses primarily on using MD-NEXT, and I apologise if you were expecting more information about publicly available tools '-'.
+
+If you wish to improve or expand this guide, feel free to fork it, and I'll gladly review and merge contributions into the main repository! :3
+
+Thank you for your understanding, and I apologise ' ^ '
 
