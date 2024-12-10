@@ -76,17 +76,58 @@ For iOS devices, the situation is different. You need to press Yes for any promp
 
 # MD-Next procedure.
 
+MD-NEXT is a powerful forensic tool designed for comprehensive mobile device analysis. It includes detailed, step-by-step instructions embedded within the application to guide users through various processes. Make sure you follow them and check the documentation or contract support if you have any issues! :3 
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/772ac8ac-d22d-4a5c-9a92-20c18fc87f76" style="width: 100%; max-width: 1000; max-height: 500;">
+
+</div>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/24f1b1c7-8f6a-4b1f-8384-40efad7491be" style="width: 100%; max-width: 1000; max-height: 500;">
+
+</div>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/eee69315-22df-4a9a-909f-49a6cb92874d" style="width: 100%; max-width: 1000; max-height: 500;">
+
+</div>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/a7f4f738-4c47-46ba-aca4-c73fbffb945c" style="width: 100%; max-width: 1000; max-height: 500;">
+
+</div>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/47b8b825-5620-466d-86bb-c9dea23f6db9" style="width: 100%; max-width: 1000; max-height: 500;">
+
+</div>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/a3634f8b-0769-48f0-afea-5bd85a4b5324" style="width: 100%; max-width: 1000; max-height: 500;">
+
+</div>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/845776b1-6129-4931-a551-9ecd8eb32b28" style="width: 100%; max-width: 1000; max-height: 500;">
+
+</div>
+
+<div align="center">
+    <img src="" style="width: 100%; max-width: 1000; max-height: 500;">
+
+</div>
+<div align="center">
+    <img src="" style="width: 100%; max-width: 1000; max-height: 500;">
+
+</div>
+<div align="center">
+    <img src="" style="width: 100%; max-width: 1000; max-height: 500;">
+
+</div>
 
 
-
-
-![MD-NEXT_XeQOQePUT9](https://github.com/user-attachments/assets/772ac8ac-d22d-4a5c-9a92-20c18fc87f76)
-![MD-NEXT_dta7L7iLXo](https://github.com/user-attachments/assets/eee69315-22df-4a9a-909f-49a6cb92874d)
-![MD-NEXT_QaoYjSjREb](https://github.com/user-attachments/assets/a7f4f738-4c47-46ba-aca4-c73fbffb945c)
-![MD-NEXT_lMyqAYsgXn](https://github.com/user-attachments/assets/a3634f8b-0769-48f0-afea-5bd85a4b5324)
-![MD-NEXT_yYdw3hp229](https://github.com/user-attachments/assets/47b8b825-5620-466d-86bb-c9dea23f6db9)
-![MD-NEXT_wXo7OUGYG4](https://github.com/user-attachments/assets/845776b1-6129-4931-a551-9ecd8eb32b28)
-![MD-NEXT_TJhuM599HY](https://github.com/user-attachments/assets/1f302ff3-a036-4497-ab9e-253c58b1565a)
+![MD-NEXT_TJhuM599HY]()
 ![MD-NEXT_CTY2pjiud6](https://github.com/user-attachments/assets/24f1b1c7-8f6a-4b1f-8384-40efad7491be)
 ![MD-NEXT_BgtFnKGy0n](https://github.com/user-attachments/assets/04fedd1f-2091-4d0f-b4b9-86a92331412b)
 ![explorer_wQeDpUJRlV](https://github.com/user-attachments/assets/8a15a6fc-09e0-4d3c-abe9-5a7a42d67bd1)
